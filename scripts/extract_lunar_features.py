@@ -192,6 +192,7 @@ def main():
 
     results = {}
     source_metadata = {}
+    valid_pixel_counts = {}
     reference = None
     elevation_data = None
     elevation_valid = None
@@ -215,6 +216,7 @@ def main():
             )
 
         source_metadata[feature_name] = metadata
+        valid_pixel_counts[feature_name] = int(valid.sum())
 
         results[feature_name] = calculate_statistics(
             data, valid, UNITS[feature_name]
@@ -299,16 +301,28 @@ def main():
         },
         "source_metadata": source_metadata,
         "quality_checks": {
-            "all_rasters_grid_aligned": True,
-            "all_rasters_have_valid_pixels": True,
-            "all_rasters_same_dimensions": True,
-            "roughness_valid_pixels": roughness_stats[
-                "valid_pixels"
-            ],
-            "roughness_window_pixels": WINDOW_SIZE,
-            "roughness_minimum_valid_neighbors": (
-                MIN_VALID_NEIGHBORS
+            "all_rasters_grid_aligned": all(
+                metadata["transform"]
+                == source_metadata["elevation"]["transform"]
+                and metadata["crs"]
+                == source_metadata["elevation"]["crs"]
+                for metadata in source_metadata.values()
             ),
+            "all_rasters_have_valid_pixels": all(
+                count > 0
+                for count in valid_pixel_counts.values()
+            ),
+            "all_rasters_same_dimensions": all(
+                metadata["width"]
+                == source_metadata["elevation"]["width"]
+                and metadata["height"]
+                == source_metadata["elevation"]["height"]
+                for metadata in source_metadata.values()
+            ),
+            "valid_pixels_by_raster": valid_pixel_counts,
+            "roughness_valid_pixels": roughness_stats["valid_pixels"],
+            "roughness_window_pixels": WINDOW_SIZE,
+            "roughness_minimum_valid_neighbors": MIN_VALID_NEIGHBORS,
         },
     }
 

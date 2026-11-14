@@ -233,6 +233,13 @@
     "all_rasters_grid_aligned": true,
     "all_rasters_have_valid_pixels": true,
     "all_rasters_same_dimensions": true,
+    "valid_pixels_by_raster": {
+      "elevation": 10240000,
+      "slope": 10240000,
+      "total_elevation_error": 10240000,
+      "slope_uncertainty": 10240000,
+      "ldec": 10240000
+    },
     "roughness_valid_pixels": 10239996,
     "roughness_window_pixels": 3,
     "roughness_minimum_valid_neighbors": 5
