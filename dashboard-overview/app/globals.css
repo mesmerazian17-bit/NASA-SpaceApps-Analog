@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+
+html, body { background: #080D16; color: #E8EEF5; }
+body { font-family: var(--font-sans), system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+
+:focus-visible { outline: 2px solid #52D6E8; outline-offset: 3px; }
+
+/* Slow drift on the hero image. One restrained ambient motion. */
+@keyframes hero-drift {
+  from { transform: scale(1.02) translate3d(0, 0, 0); }
+  to   { transform: scale(1.08) translate3d(-1.2%, -0.8%, 0); }
+}
+.hero-drift { animation: hero-drift 48s ease-in-out infinite alternate; will-change: transform; }
+
+/* Title reveal: plays once on load. */
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(14px); clip-path: inset(0 0 100% 0); }
+  to   { opacity: 1; transform: translateY(0);    clip-path: inset(0 0 0 0); }
+}
+.reveal { animation: reveal 0.9s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+.reveal-2 { animation-delay: 0.25s; }
+.reveal-3 { animation-delay: 0.5s; }
+
+/* Exit transition used when entering Mission Control. */
+@keyframes iris-in {
+  from { clip-path: circle(0% at 50% 85%); }
+  to   { clip-path: circle(150% at 50% 85%); }
+}
+.iris { animation: iris-in 0.7s cubic-bezier(0.6, 0, 0.2, 1) forwards; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-drift, .reveal, .iris { animation: none !important; }
+  .iris { clip-path: none; }
+}
