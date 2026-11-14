@@ -1,0 +1,65 @@
+{
+  "schema_version": "1.0",
+  "targets": [
+    {
+      "target_id": "lunar_south_pole",
+      "name": "Artemis III Connecting Ridge",
+      "planet": "Moon",
+      "gravity_m_s2": 1.62,
+      "terrain_type": "lunar polar highlands",
+      "required_failure_modes": [
+        "electrostatic_dust",
+        "thermal_extremes",
+        "steep_slope_traversal",
+        "illumination_shadow_navigation"
+      ],
+      "features": {
+        "slope_deg": 12.597745895385742,
+        "roughness_rms": 0.9262295169672062,
+        "albedo": null,
+        "diurnal_temp_swing_k": null,
+        "aridity_index": null
+      }
+    },
+    {
+      "target_id": "jezero",
+      "name": "Jezero Crater Fluvial Plain",
+      "planet": "Mars",
+      "gravity_m_s2": 3.71,
+      "terrain_type": "ancient fluvial and deltaic terrain",
+      "required_failure_modes": [
+        "fine_dust",
+        "regolith_slip",
+        "thermal_extremes",
+        "loose_material_mobility"
+      ],
+      "features": {
+        "slope_deg": null,
+        "roughness_rms": null,
+        "albedo": null,
+        "diurnal_temp_swing_k": null,
+        "aridity_index": null
+      }
+    },
+    {
+      "target_id": "arsia_mons_pit",
+      "name": "Arsia Mons Volcanic Collapse Pit",
+      "planet": "Mars",
+      "gravity_m_s2": 3.71,
+      "terrain_type": "volcanic collapse feature",
+      "required_failure_modes": [
+        "gps_denied_navigation",
+        "subsurface_exploration",
+        "steep_slope_traversal",
+        "low_visibility_navigation"
+      ],
+      "features": {
+        "slope_deg": null,
+        "roughness_rms": null,
+        "albedo": null,
+        "diurnal_temp_swing_k": null,
+        "aridity_index": null
+      }
+    }
+  ]
+}

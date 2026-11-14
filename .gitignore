@@ -1,0 +1,16 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Editor and OS files
+.vscode/
+.DS_Store
+# Large raw lunar datasets (stored locally)
+data/raw/lunar/*.tif
+
+# Local JSON backups
+data/planetary_targets.backup_*.json

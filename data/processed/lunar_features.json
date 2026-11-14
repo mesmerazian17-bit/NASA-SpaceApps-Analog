@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "target": "Artemis III Connecting Ridge",
+  "target_id": "lunar_south_pole",
+  "site": "NASA LOLA Site01",
+  "resolution_m": 5,
+  "features": {
+    "elevation_m": {
+      "valid_pixels": 10240000,
+      "mean": 1139.058837890625,
+      "median": 1200.248779296875,
+      "std": 422.17913818359375,
+      "min": -523.1834106445312,
+      "max": 1959.4962158203125,
+      "unit": "m"
+    },
+    "slope_deg": {
+      "valid_pixels": 10240000,
+      "mean": 12.597745895385742,
+      "median": 12.29025936126709,
+      "std": 5.8931074142456055,
+      "min": 0.0,
+      "max": 64.58820343017578,
+      "unit": "degrees"
+    },
+    "roughness_rms": {
+      "valid_pixels": 10239996,
+      "mean": 0.9262295169672062,
+      "median": 0.8929164760882101,
+      "std": 0.44465239770793213,
+      "min": 0.0066047558735371536,
+      "max": 6.978819512456299,
+      "unit": "m",
+      "method": "Local standard deviation of elevation",
+      "window_pixels": 3,
+      "minimum_valid_neighbors": 5,
+      "pixel_resolution_m": 5
+    },
+    "local_roughness_m": {
+      "valid_pixels": 10239996,
+      "mean": 0.9262295169672062,
+      "median": 0.8929164760882101,
+      "std": 0.44465239770793213,
+      "min": 0.0066047558735371536,
+      "max": 6.978819512456299,
+      "unit": "m",
+      "method": "Local standard deviation of elevation",
+      "window_pixels": 3,
+      "minimum_valid_neighbors": 5,
+      "pixel_resolution_m": 5
+    },
+    "elevation_coverage_percent": 100.0,
+    "total_elevation_error_m": {
+      "valid_pixels": 10240000,
+      "mean": 0.4045424461364746,
+      "median": 0.37194737792015076,
+      "std": 0.18121929466724396,
+      "min": 0.061578184366226196,
+      "max": 5.582818508148193,
+      "unit": "m"
+    },
+    "slope_uncertainty": {
+      "valid_pixels": 10240000,
+      "mean": 2.001948833465576,
+      "median": 1.9008564949035645,
+      "std": 0.5708850026130676,
+      "min": 0.6137070655822754,
+      "max": 21.51097869873047,
+      "unit": "degrees"
+    },
+    "ldec": {
+      "valid_pixels": 10240000,
+      "mean": 0.09999199211597443,
+      "median": 0.0,
+      "std": 0.3169595003128052,
+      "min": 0.0,
+      "max": 5.0,
+      "unit": null
+    }
+  },
+  "provenance": {
+    "source_name": "NASA LOLA Site01",
+    "instrument_or_dataset": "LOLA gridded lunar surface products",
+    "measurement_date": null,
+    "spatial_resolution_m": 5,
+    "value_type": "measured_and_derived",
+    "source_url": null,
+    "notes": "Source URL and measurement date have not yet been independently documented."
+  },
+  "source_metadata": {
+    "elevation": {
+      "filename": "Site01_final_adj_5mpp_surf.tif",
+      "width": 3200,
+      "height": 3200,
+      "resolution": [
+        5.0,
+        5.0
+      ],
+      "crs": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "nodata": "nan",
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "transform": [
+        5.0,
+        0.0,
+        -19000.0,
+        0.0,
+        -5.0,
+        -4000.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "slope": {
+      "filename": "Site01_final_adj_5mpp_slp.tif",
+      "width": 3200,
+      "height": 3200,
+      "resolution": [
+        5.0,
+        5.0
+      ],
+      "crs": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "nodata": "nan",
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "transform": [
+        5.0,
+        0.0,
+        -19000.0,
+        0.0,
+        -5.0,
+        -4000.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "total_elevation_error": {
+      "filename": "Site01_final_adj_5mpp_toterr.tif",
+      "width": 3200,
+      "height": 3200,
+      "resolution": [
+        5.0,
+        5.0
+      ],
+      "crs": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "nodata": "nan",
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "transform": [
+        5.0,
+        0.0,
+        -19000.0,
+        0.0,
+        -5.0,
+        -4000.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "slope_uncertainty": {
+      "filename": "Site01_final_adj_5mpp_slperr.tif",
+      "width": 3200,
+      "height": 3200,
+      "resolution": [
+        5.0,
+        5.0
+      ],
+      "crs": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "nodata": "nan",
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "transform": [
+        5.0,
+        0.0,
+        -19000.0,
+        0.0,
+        -5.0,
+        -4000.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    "ldec": {
+      "filename": "Site01_final_adj_5mpp_ldec.tif",
+      "width": 3200,
+      "height": 3200,
+      "resolution": [
+        5.0,
+        5.0
+      ],
+      "crs": "PROJCS[\"unnamed\",GEOGCS[\"unnamed ellipse\",DATUM[\"unknown\",SPHEROID[\"unnamed\",1737400,0]],PRIMEM[\"Greenwich\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Polar_Stereographic\"],PARAMETER[\"latitude_of_origin\",-90],PARAMETER[\"central_meridian\",0],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1],AXIS[\"Easting\",NORTH],AXIS[\"Northing\",NORTH]]",
+      "nodata": "nan",
+      "bounds": [
+        -19000.0,
+        -20000.0,
+        -3000.0,
+        -4000.0
+      ],
+      "transform": [
+        5.0,
+        0.0,
+        -19000.0,
+        0.0,
+        -5.0,
+        -4000.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "quality_checks": {
+    "all_rasters_grid_aligned": true,
+    "all_rasters_have_valid_pixels": true,
+    "all_rasters_same_dimensions": true,
+    "roughness_valid_pixels": 10239996,
+    "roughness_window_pixels": 3,
+    "roughness_minimum_valid_neighbors": 5
+  }
+}
