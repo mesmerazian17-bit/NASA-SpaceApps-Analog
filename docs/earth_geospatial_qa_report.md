@@ -1,6 +1,7 @@
 # Earth Geospatial QA Report and Integration Handoff
 
 **QA date:** 2026-11-15  
+**Historical Earth extraction date:** Unavailable; the QA date is not the extraction date.
 **Raw QA source:** `data/raw/teammates/earth_candidates.json`  
 **Scope:** Read-only validation of the 85 raw Earth records, targeted elevation cross-checks, extraction-method review, provider/provenance audit, and comparison with the processed lunar summary.  
 **Data changes:** None. No candidate values were replaced; no extraction was rerun.
@@ -21,6 +22,8 @@
 The raw validation source for this review is [earth_candidates.json](../data/raw/teammates/earth_candidates.json). It contains 85 rows. Its values were inspected directly; the processed Earth contract is the current frontend authority.
 
 The seed CSV was supplied separately from the repository. Its 85 site IDs and coordinates were cross-checked against the processed contract and match. The extraction staging CSV is a separate input and was not independently reconciled in this handoff.
+
+The contract builder, [build_earth_contract_reconciled.py](../scripts/build_earth_contract_reconciled.py), depends on the staging CSV at the literal path `/tmp/earth_candidates_staging.csv`. That CSV is not included in the repository. A fresh clone cannot reproduce the build without supplying the required file at the path configured in the script; no alternate input path is documented.
 
 The following implementation and data notes were reviewed:
 
@@ -118,6 +121,7 @@ The 55/30 row is a latitude-eligibility count, not the observed provider split. 
 ### Sources, limits, and missing provenance
 
 - The code uses OpenTopoData's `https://api.opentopodata.org/v1/mapzen` endpoint. Its [Mapzen dataset documentation](https://www.opentopodata.org/datasets/mapzen/) describes a global 1-arc-second product (about 30 m at the equator), with some areas interpolated from lower-resolution sources; the public service documents its Mapzen data as version 1.1 downloaded in May 2020. The [API documentation](https://www.opentopodata.org/api/) says the default interpolation is bilinear and that integer raster outputs are rounded to the nearest integer. This is consistent with the integer elevations in the file but does not independently prove how the original run was executed.
+- The 1-arc-second figure is the nominal Mapzen product resolution, not a verified effective resolution for each site. Effective per-site resolution is unknown and has not been independently verified; the raw records and contract do not identify it.
 - The code's Open-Elevation endpoint is `https://api.open-elevation.com/api/v1/lookup`. Its current [service documentation](https://open-elevation.com/) describes SRTM-derived options and usage limits; the extraction code does not pin a dataset selector or save a response's dataset identifier. The historical resolution and service state at extraction time are therefore unknown. Current service limits should not be used to infer historical behavior.
 - Climate fields are requested from the [NASA POWER climatology point API](https://power.larc.nasa.gov/api/temporal/climatology/point) for `T2M_MAX`, `T2M_MIN`, `ALLSKY_SRF_ALB`, and `PRECTOTCORR`. The extraction script notes POWER's roughly 0.5-degree spatial scale; these are regional climate estimates, not site-scale terrain measurements.
 - The JSON records do not include extraction date, individual source URL, source dataset/version, raw five-point elevations, vertical datum, uncertainty, quality flag, or request/error log. The code's retry and logging behavior is not a substitute for a persisted run manifest.
@@ -142,7 +146,20 @@ Equal units do not establish equal measurement meaning. Do not use the dataset-n
 Run from the project root in PowerShell. These commands read the raw JSON and query only the listed APIs; they do not write candidate data.
 
 ```powershell
-python -c "import json,collections,math; d=json.load(open(r'data\raw\teammates\earth_candidates.json',encoding='utf-8')); print('rows',len(d)); print('providers',collections.Counter(r.get('elevation_source') for r in d)); print('finite', {k:sum(isinstance(r.get(k),(int,float)) and math.isfinite(r[k]) for r in d) for k in ('elevation_m','slope_deg','roughness_rms_m','roughness_rms')}); print('duplicate_coordinates',len(d)-len({(r['lat'],r['lon']) for r in d}))"
+@'
+import json, collections, math
+d = json.load(open(r'data\raw\teammates\earth_candidates.json', encoding='utf-8'))
+print('rows', len(d))
+print('providers', collections.Counter(r.get('elevation_source') for r in d))
+print('finite', {
+    k: sum(
+        isinstance(r.get(k), (int, float)) and math.isfinite(r[k])
+        for r in d
+    )
+    for k in ('elevation_m', 'slope_deg', 'roughness_rms_m', 'roughness_rms')
+})
+print('duplicate_coordinates', len(d) - len({(r['lat'], r['lon']) for r in d}))
+'@ | python -
 ```
 
 Independent DEM cross-check used:

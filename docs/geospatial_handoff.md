@@ -1,5 +1,7 @@
 # Geospatial Handoff
 
+**QA/audit date:** 2026-11-15. This is not the original Earth extraction date; the historical extraction date is unavailable.
+
 ## Status and source of truth
 
 The frontend integration source is [`data/processed/earth_candidates_contract.json`](../data/processed/earth_candidates_contract.json). Do not substitute the raw teammate JSON or the seed CSV for this contract. The companion [`data/processed/earth_candidates_map.geojson`](../data/processed/earth_candidates_map.geojson) is a derived, map-ready export; it does not replace or modify the contract.
@@ -31,9 +33,9 @@ Elevation is retained as an `elevation_m` property, not as the optional third co
 - Earth elevation, slope, and roughness are attributed in the contract to the OpenTopoData API's Mapzen elevation dataset. The extraction code calls `https://api.opentopodata.org/v1/mapzen`. The raw records label all 85 elevations as `opentopodata-mapzen`.
 - Climate inputs are attributed to NASA POWER climatology, queried by the extraction code at `https://power.larc.nasa.gov/api/temporal/climatology/point`. The script requests `T2M_MAX`, `T2M_MIN`, `T2M_MAX_AVG`, `T2M_MIN_AVG`, `ALLSKY_SRF_ALB`, and `PRECTOTCORR`. It describes POWER as roughly 0.5-degree resolution, so these are regional gridded values rather than site-scale observations.
 - The Earth source references recorded in the contract include `https://www.opentopodata.org/`, `https://www.opentopodata.org/datasets/`, and `https://power.larc.nasa.gov/`.
-- [`scripts/build_earth_contract_reconciled.py`](../scripts/build_earth_contract_reconciled.py) documents the reconciliation and schema-validation process. It writes a separate candidate output; it was not run for this handoff.
+- [`scripts/build_earth_contract_reconciled.py`](../scripts/build_earth_contract_reconciled.py) documents the reconciliation and schema-validation process. It reads a required staging CSV from the literal path `/tmp/earth_candidates_staging.csv` (`STAGING_PATH` in the script), in addition to the repository inputs, and writes a separate candidate output; it was not run for this handoff. The staging CSV is not included in the repository. A fresh clone cannot reproduce this build without supplying that required input at the configured path; no alternate input path is specified here.
 
-The contract does not record a per-site source raster resolution. Although the public Mapzen dataset documentation describes a nominal global 1-arc-second product, that does not establish the effective input resolution or accuracy at each candidate location. Do not populate the contract's null `spatial_resolution_m` fields with an assumed value.
+The public Mapzen dataset documentation describes a nominal global 1-arc-second product. That nominal product resolution is distinct from the effective per-site resolution: the effective resolution at each candidate location is unknown and has not been independently verified. The contract does not record a per-site source raster resolution. Do not populate the contract's null `spatial_resolution_m` fields with an assumed value.
 
 ### Lunar reference
 
