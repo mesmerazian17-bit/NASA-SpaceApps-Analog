@@ -1,0 +1,70 @@
+{
+  "schema_version": "0.1",
+  "site_id": "BM-01",
+  "site_name": "Atacama Desert",
+  "planet": "Earth",
+  "location": {
+    "latitude_deg": -24.1,
+    "longitude_deg": -70.0,
+    "elevation_m": null
+  },
+  "features": {
+    "terrain_type": null,
+    "slope_deg": null,
+    "roughness_rms_m": null,
+    "roughness_normalized": null,
+    "albedo": null,
+    "mean_daily_temp_range_k": null,
+    "precip_mm_day": null,
+    "aridity_index": null
+  },
+  "feature_metadata": {
+    "roughness_rms_m": {
+      "unit": "m",
+      "source": null,
+      "method": "five_point_plane_fit",
+      "sampling_scale_m": 500,
+      "spatial_resolution_m": null,
+      "comparability_status": "requires_review",
+      "uncertainty": null
+    },
+    "roughness_normalized": {
+      "unit": "dimensionless",
+      "source": null,
+      "method": "dataset_min_max",
+      "sampling_scale_m": 500,
+      "spatial_resolution_m": null,
+      "comparability_status": "requires_review",
+      "uncertainty": null
+    },
+    "mean_daily_temp_range_k": {
+      "unit": "K",
+      "source": "NASA POWER",
+      "method": "day_weighted_monthly_average_daily_max_minus_min",
+      "sampling_scale_m": null,
+      "spatial_resolution_m": null,
+      "comparability_status": "requires_review",
+      "uncertainty": null
+    }
+  },
+  "quality": {
+    "missing_features": [
+      "terrain_type",
+      "slope_deg",
+      "roughness_rms_m",
+      "roughness_normalized",
+      "albedo",
+      "mean_daily_temp_range_k",
+      "precip_mm_day",
+      "aridity_index"
+    ],
+    "uncertainty_available": false,
+    "quality_notes": [
+      "Template example only; populate from an approved source dataset."
+    ]
+  },
+  "provenance": {
+    "dataset_version": null,
+    "source_references": []
+  }
+}

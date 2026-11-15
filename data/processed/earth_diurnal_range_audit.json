@@ -1,0 +1,6216 @@
+{
+  "source": "data/raw/teammates/earth_candidates.json",
+  "parameter_pair": [
+    "T2M_MAX_AVG",
+    "T2M_MIN_AVG"
+  ],
+  "method": "Monthly average daily maximum minus monthly average daily minimum; annual summaries calculated from 12 monthly ranges.",
+  "results": [
+    {
+      "site_id": "BM-01",
+      "name": "Atacama Desert (Yungay)",
+      "lat": -24.1,
+      "lon": -70,
+      "old_diurnal_temp_swing_k": 33.57,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 18.81,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 18.29,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.13,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 19.71,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 21.6,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 22.96,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 24.21,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 25.17,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 24.27,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 22.03,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 20.62,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 19.92,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 21.3933,
+      "day_weighted_mean_k": 21.4134,
+      "old_minus_new_k": 12.1566
+    },
+    {
+      "site_id": "BM-02",
+      "name": "Haughton Impact Crater, Devon Island",
+      "lat": 75.38,
+      "lon": -89.68,
+      "old_diurnal_temp_swing_k": 65.36,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 21.2,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 21.08,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 26.32,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 22.88,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 18.02,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 15.75,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 13.2,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 13.9,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 15.81,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 22.47,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 22.16,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 22.63,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 19.6183,
+      "day_weighted_mean_k": 19.6115,
+      "old_minus_new_k": 45.7485
+    },
+    {
+      "site_id": "BM-03",
+      "name": "Mauna Kea Summit",
+      "lat": 19.82,
+      "lon": -155.47,
+      "old_diurnal_temp_swing_k": 15.92,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 9.73,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 9.83,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 9.67,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 8.68,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 8.55,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 8.11,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 8.43,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 8.25,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 8.17,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 8.39,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 8.75,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 8.81,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 8.7808,
+      "day_weighted_mean_k": 8.7761,
+      "old_minus_new_k": 7.1439
+    },
+    {
+      "site_id": "BM-04",
+      "name": "Stefansh\u00e9llir Lava Cave (Hallmundarhraun)",
+      "lat": 64.77,
+      "lon": -20.87,
+      "old_diurnal_temp_swing_k": 45.87,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 19.4,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 18.87,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.34,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 19.4,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 16.78,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 16.04,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 16.01,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 16.32,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 15.82,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 17.51,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 19.12,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 20.32,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 17.9108,
+      "day_weighted_mean_k": 17.9064,
+      "old_minus_new_k": 27.9636
+    },
+    {
+      "site_id": "BM-05",
+      "name": "Mojave Desert (Amboy Crater)",
+      "lat": 34.56,
+      "lon": -115.78,
+      "old_diurnal_temp_swing_k": 53.1,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 25.11,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 26.6,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 28.61,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 30.26,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 30.08,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 28.89,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 24.92,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 24.2,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 26.68,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 27.33,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 27.51,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 25.29,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 27.1233,
+      "day_weighted_mean_k": 27.1144,
+      "old_minus_new_k": 25.9856
+    },
+    {
+      "site_id": "SEA-01",
+      "name": "Mount Tambora Caldera",
+      "lat": -8.25,
+      "lon": 118,
+      "old_diurnal_temp_swing_k": 9.57,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 3.72,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 3.72,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 3.68,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 3.49,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 3.71,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 4.22,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 4.27,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 4.74,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 5.32,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 5.3,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 5.04,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 4.28,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 4.2908,
+      "day_weighted_mean_k": 4.293,
+      "old_minus_new_k": 5.277
+    },
+    {
+      "site_id": "SEA-02",
+      "name": "Mount Tambora Pyroclastic Slopes",
+      "lat": -8.33,
+      "lon": 118,
+      "old_diurnal_temp_swing_k": 16.67,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 7.07,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 6.78,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 6.52,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 6.73,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 7.26,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 7.8,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 8.84,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 10.16,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 10.74,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 10.61,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 9.73,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 7.79,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 8.3358,
+      "day_weighted_mean_k": 8.3441,
+      "old_minus_new_k": 8.3259
+    },
+    {
+      "site_id": "SEA-03",
+      "name": "Mount Bromo Sea of Sand",
+      "lat": -7.96,
+      "lon": 112.95,
+      "old_diurnal_temp_swing_k": 19.85,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 8.36,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 7.79,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 7.6,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 7.94,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 9.16,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 9.99,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 11.74,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 13.43,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 14.32,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 13.47,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 11.9,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 9.5,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 10.4333,
+      "day_weighted_mean_k": 10.4484,
+      "old_minus_new_k": 9.4016
+    },
+    {
+      "site_id": "SEA-04",
+      "name": "Kawah Ijen Crater",
+      "lat": -8.06,
+      "lon": 114.24,
+      "old_diurnal_temp_swing_k": 16.34,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 7.66,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 6.89,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 6.93,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 6.75,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 7.48,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 7.74,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 8.33,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 9.18,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 9.94,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 10.16,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 9.51,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 8.13,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 8.225,
+      "day_weighted_mean_k": 8.2331,
+      "old_minus_new_k": 8.1069
+    },
+    {
+      "site_id": "SEA-05",
+      "name": "Mount Rinjani Caldera (Segara Anak)",
+      "lat": -8.41,
+      "lon": 116.46,
+      "old_diurnal_temp_swing_k": 15.09,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 6.42,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 6.27,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 6.27,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 6.38,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 6.86,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 7.13,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 7.71,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 9.0,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 9.58,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 9.66,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 8.54,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 7.16,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 7.5817,
+      "day_weighted_mean_k": 7.5889,
+      "old_minus_new_k": 7.5011
+    },
+    {
+      "site_id": "SEA-06",
+      "name": "Gunung Sewu Karst Caves (Jomblang)",
+      "lat": -8,
+      "lon": 110.65,
+      "old_diurnal_temp_swing_k": 16.5,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 6.8,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 6.6,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 6.8,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 6.93,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 7.55,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 8.46,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 9.57,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 10.84,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 11.39,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 10.86,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 8.89,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 7.19,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 8.49,
+      "day_weighted_mean_k": 8.5008,
+      "old_minus_new_k": 7.9992
+    },
+    {
+      "site_id": "SEA-07",
+      "name": "Merapi Pyroclastic Plains (Gendol)",
+      "lat": -7.6,
+      "lon": 110.47,
+      "old_diurnal_temp_swing_k": 22.89,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 9.47,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 9.04,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 9.35,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 9.29,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 10.22,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 11.0,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 13.38,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 15.52,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 16.32,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 15.18,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 12.41,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 10.17,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 11.7792,
+      "day_weighted_mean_k": 11.7965,
+      "old_minus_new_k": 11.0935
+    },
+    {
+      "site_id": "SEA-08",
+      "name": "Anak Krakatau",
+      "lat": -6.1,
+      "lon": 105.42,
+      "old_diurnal_temp_swing_k": 8.84,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 3.87,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 3.89,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 3.75,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 3.81,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 3.83,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 4.16,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 4.42,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 5.19,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 5.75,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 5.62,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 5.02,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 4.07,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 4.4483,
+      "day_weighted_mean_k": 4.4503,
+      "old_minus_new_k": 4.3897
+    },
+    {
+      "site_id": "SEA-09",
+      "name": "Mount Semeru Pyroclastic Flows",
+      "lat": -8.15,
+      "lon": 112.93,
+      "old_diurnal_temp_swing_k": 19.85,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 8.36,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 7.79,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 7.6,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 7.94,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 9.16,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 9.99,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 11.74,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 13.43,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 14.32,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 13.47,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 11.9,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 9.5,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 10.4333,
+      "day_weighted_mean_k": 10.4484,
+      "old_minus_new_k": 9.4016
+    },
+    {
+      "site_id": "SEA-10",
+      "name": "Dieng Plateau Craters (Sikidang)",
+      "lat": -7.21,
+      "lon": 109.91,
+      "old_diurnal_temp_swing_k": 17.21,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 7.24,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 6.54,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 6.89,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 6.91,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 7.73,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 8.17,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 9.77,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 11.31,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 11.9,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 11.06,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 9.05,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 7.66,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 8.6858,
+      "day_weighted_mean_k": 8.6999,
+      "old_minus_new_k": 8.5101
+    },
+    {
+      "site_id": "SEA-11",
+      "name": "Mount Sinabung",
+      "lat": 3.17,
+      "lon": 98.39,
+      "old_diurnal_temp_swing_k": 14.28,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 9.81,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 10.31,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 10.45,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 9.81,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 9.23,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 9.38,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 9.01,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 9.41,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 9.88,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 9.58,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 9.35,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 9.22,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 9.62,
+      "day_weighted_mean_k": 9.6145,
+      "old_minus_new_k": 4.6655
+    },
+    {
+      "site_id": "SEA-12",
+      "name": "Toba Caldera (Samosir)",
+      "lat": 2.68,
+      "lon": 98.88,
+      "old_diurnal_temp_swing_k": 14.61,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 10.37,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 10.44,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 10.78,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 10.07,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 9.83,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 10.09,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 9.53,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 10.1,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 10.52,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 10.34,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 9.79,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 9.69,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 10.1292,
+      "day_weighted_mean_k": 10.1267,
+      "old_minus_new_k": 4.4833
+    },
+    {
+      "site_id": "SEA-13",
+      "name": "Kelud Crater",
+      "lat": -7.93,
+      "lon": 112.31,
+      "old_diurnal_temp_swing_k": 21.1,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 8.33,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 8.17,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 8.12,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 8.44,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 9.68,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 10.65,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 12.67,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 14.49,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 15.37,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 14.36,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 12.56,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 10.12,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 11.08,
+      "day_weighted_mean_k": 11.0965,
+      "old_minus_new_k": 10.0035
+    },
+    {
+      "site_id": "SEA-14",
+      "name": "Kelimutu Crater Lakes",
+      "lat": -8.77,
+      "lon": 121.82,
+      "old_diurnal_temp_swing_k": 10.33,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 3.98,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 3.9,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 4.02,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 3.86,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 3.98,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 4.51,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 4.61,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 5.56,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 5.96,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 5.83,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 5.12,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 4.75,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 4.6733,
+      "day_weighted_mean_k": 4.6776,
+      "old_minus_new_k": 5.6524
+    },
+    {
+      "site_id": "SEA-15",
+      "name": "Taal Volcano Island",
+      "lat": 14,
+      "lon": 120.99,
+      "old_diurnal_temp_swing_k": 21.95,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 10.54,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 11.3,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 13.13,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 13.97,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 11.95,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 9.98,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 9.2,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 9.15,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 9.35,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 9.29,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 9.09,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 9.15,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 10.5083,
+      "day_weighted_mean_k": 10.5008,
+      "old_minus_new_k": 11.4492
+    },
+    {
+      "site_id": "SEA-16",
+      "name": "Mayon Volcano",
+      "lat": 13.26,
+      "lon": 123.69,
+      "old_diurnal_temp_swing_k": 13.13,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 5.21,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 5.55,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 5.69,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 6.28,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 6.05,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 5.66,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 4.86,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 4.89,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 5.01,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 4.66,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 4.45,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 4.54,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 5.2375,
+      "day_weighted_mean_k": 5.2337,
+      "old_minus_new_k": 7.8963
+    },
+    {
+      "site_id": "SEA-17",
+      "name": "Mount Pinatubo Caldera",
+      "lat": 15.14,
+      "lon": 120.35,
+      "old_diurnal_temp_swing_k": 24.61,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 14.37,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 15.9,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 17.3,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 16.62,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 14.19,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 9.81,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 8.01,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 7.71,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 8.12,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 9.74,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 10.67,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 11.77,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 12.0175,
+      "day_weighted_mean_k": 11.9934,
+      "old_minus_new_k": 12.6166
+    },
+    {
+      "site_id": "SEA-18",
+      "name": "Son Doong Cave",
+      "lat": 17.45,
+      "lon": 106.29,
+      "old_diurnal_temp_swing_k": 33.37,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 17.45,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 20.48,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 22.15,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 20.67,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 16.4,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 12.35,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 12.39,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 11.62,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 12.01,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 13.17,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 14.99,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 15.84,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 15.7933,
+      "day_weighted_mean_k": 15.7635,
+      "old_minus_new_k": 17.6065
+    },
+    {
+      "site_id": "SEA-19",
+      "name": "Deer Cave, Gunung Mulu",
+      "lat": 4.03,
+      "lon": 114.81,
+      "old_diurnal_temp_swing_k": 13.89,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 9.83,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 10.4,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 10.15,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 9.54,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 9.0,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 9.16,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 9.4,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 9.76,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 9.81,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 9.81,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 9.36,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 9.46,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 9.64,
+      "day_weighted_mean_k": 9.6356,
+      "old_minus_new_k": 4.2544
+    },
+    {
+      "site_id": "SEA-20",
+      "name": "Batur Caldera",
+      "lat": -8.24,
+      "lon": 115.38,
+      "old_diurnal_temp_swing_k": 8.13,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 3.24,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 3.07,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 3.17,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 2.95,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 3.16,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 3.52,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 3.78,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 4.12,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 4.55,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 4.46,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 3.89,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 3.66,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 3.6308,
+      "day_weighted_mean_k": 3.6344,
+      "old_minus_new_k": 4.4956
+    },
+    {
+      "site_id": "GL-01",
+      "name": "Pamir Plateau (Murghab)",
+      "lat": 38.17,
+      "lon": 73.96,
+      "old_diurnal_temp_swing_k": 59.96,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 23.77,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 24.99,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 27.01,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 25.11,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 20.51,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 22.71,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 24.04,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 24.62,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 22.83,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 22.9,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 22.83,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 22.6,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 23.66,
+      "day_weighted_mean_k": 23.6522,
+      "old_minus_new_k": 36.3078
+    },
+    {
+      "site_id": "GL-02",
+      "name": "Lut Desert (Shahdad Kaluts)",
+      "lat": 30.45,
+      "lon": 57.75,
+      "old_diurnal_temp_swing_k": 51.76,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 25.98,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 28.1,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 28.08,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 27.32,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 24.5,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 23.29,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 22.43,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 22.79,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 22.32,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 23.92,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 25.62,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 25.47,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 24.985,
+      "day_weighted_mean_k": 24.9632,
+      "old_minus_new_k": 26.7968
+    },
+    {
+      "site_id": "GL-03",
+      "name": "Erta Ale Lava Lake",
+      "lat": 13.6,
+      "lon": 40.67,
+      "old_diurnal_temp_swing_k": 30.55,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 18.71,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 20.1,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 20.87,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 19.62,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 18.61,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 17.83,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 16.85,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 16.19,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 15.14,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 17.03,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 17.46,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 17.69,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 18.0083,
+      "day_weighted_mean_k": 17.9966,
+      "old_minus_new_k": 12.5534
+    },
+    {
+      "site_id": "GL-04",
+      "name": "Namib Gravel Plains",
+      "lat": -23.5,
+      "lon": 15.2,
+      "old_diurnal_temp_swing_k": 40.37,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 23.8,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 24.68,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 26.3,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 26.47,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 26.26,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 26.15,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 26.98,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 29.32,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 31.5,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 31.63,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 29.43,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 25.11,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 27.3025,
+      "day_weighted_mean_k": 27.3122,
+      "old_minus_new_k": 13.0578
+    },
+    {
+      "site_id": "GL-05",
+      "name": "Puna de Atacama (Salar de Antofalla)",
+      "lat": -25.6,
+      "lon": -67.65,
+      "old_diurnal_temp_swing_k": 44.04,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 24.73,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 24.34,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 25.1,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 23.36,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 22.95,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 23.74,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 24.97,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 25.91,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 24.98,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 25.94,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 28.36,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 27.31,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 25.1408,
+      "day_weighted_mean_k": 25.1478,
+      "old_minus_new_k": 18.8922
+    },
+    {
+      "site_id": "GL-06",
+      "name": "Pinacate Volcanic Field",
+      "lat": 31.77,
+      "lon": -113.5,
+      "old_diurnal_temp_swing_k": 52.2,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 25.08,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 26.12,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 27.87,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 28.16,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 27.81,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 26.81,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 22.35,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 21.04,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 24.48,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 25.9,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 27.35,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 24.74,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 25.6425,
+      "day_weighted_mean_k": 25.627,
+      "old_minus_new_k": 26.573
+    },
+    {
+      "site_id": "GL-07",
+      "name": "Dallol Hydrothermal Field",
+      "lat": 14.24,
+      "lon": 40.3,
+      "old_diurnal_temp_swing_k": 29.01,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 18.83,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 19.52,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.43,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 18.34,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 17.09,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 16.6,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 16.38,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 14.99,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 14.81,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 16.35,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 16.91,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 17.41,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 17.2217,
+      "day_weighted_mean_k": 17.2089,
+      "old_minus_new_k": 11.8011
+    },
+    {
+      "site_id": "GL-08",
+      "name": "Salar de Uyuni",
+      "lat": -20.13,
+      "lon": -67.49,
+      "old_diurnal_temp_swing_k": 39.54,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 23.21,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 22.74,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 22.74,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 23.65,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 22.21,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 21.09,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 21.19,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 22.99,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 25.22,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 25.7,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 25.79,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 25.12,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 23.4708,
+      "day_weighted_mean_k": 23.4717,
+      "old_minus_new_k": 16.0683
+    },
+    {
+      "site_id": "GL-09",
+      "name": "Trou au Natron, Tibesti",
+      "lat": 20.97,
+      "lon": 16.55,
+      "old_diurnal_temp_swing_k": 42.57,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 25.08,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 25.9,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 25.53,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 23.78,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 21.35,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 18.86,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 17.39,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 17.12,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 18.08,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 21.1,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 21.18,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 23.42,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 21.5658,
+      "day_weighted_mean_k": 21.5422,
+      "old_minus_new_k": 21.0278
+    },
+    {
+      "site_id": "GL-10",
+      "name": "Aorounga Impact Structure",
+      "lat": 19.1,
+      "lon": 19.25,
+      "old_diurnal_temp_swing_k": 43.23,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 26.17,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 28.21,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 28.57,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 27.79,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 24.97,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 21.86,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 19.43,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 18.74,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 20.87,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 23.69,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 23.1,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 23.82,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 23.935,
+      "day_weighted_mean_k": 23.9057,
+      "old_minus_new_k": 19.3243
+    },
+    {
+      "site_id": "GL-11",
+      "name": "Wolfe Creek Crater",
+      "lat": -19.17,
+      "lon": 127.8,
+      "old_diurnal_temp_swing_k": 43.37,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 20.58,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 19.46,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 20.56,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 22.71,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 24.23,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 24.7,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 25.4,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 27.11,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 26.54,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 24.5,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 22.25,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 21.93,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 23.3308,
+      "day_weighted_mean_k": 23.3548,
+      "old_minus_new_k": 20.0152
+    },
+    {
+      "site_id": "GL-12",
+      "name": "Barringer (Meteor) Crater",
+      "lat": 35.03,
+      "lon": -111.02,
+      "old_diurnal_temp_swing_k": 60.19,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 26.71,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 28.03,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 29.53,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 30.51,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 30.93,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 29.02,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 23.17,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 22.15,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 26.71,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 29.89,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 29.3,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 28.34,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 27.8575,
+      "day_weighted_mean_k": 27.8448,
+      "old_minus_new_k": 32.3452
+    },
+    {
+      "site_id": "GL-13",
+      "name": "Ries Crater",
+      "lat": 48.88,
+      "lon": 10.57,
+      "old_diurnal_temp_swing_k": 55.39,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 20.44,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 21.38,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 24.13,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 25.45,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 24.03,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 22.68,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 22.42,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 22.6,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 22.96,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 23.06,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 20.34,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 18.28,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 22.3142,
+      "day_weighted_mean_k": 22.3159,
+      "old_minus_new_k": 33.0741
+    },
+    {
+      "site_id": "GL-14",
+      "name": "Lonar Crater",
+      "lat": 19.98,
+      "lon": 76.51,
+      "old_diurnal_temp_swing_k": 39.47,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 24.01,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 24.75,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 25.1,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 23.16,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 20.66,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 18.76,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 12.67,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 11.01,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 11.92,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 16.68,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 19.25,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 21.97,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 19.1617,
+      "day_weighted_mean_k": 19.1255,
+      "old_minus_new_k": 20.3445
+    },
+    {
+      "site_id": "GL-15",
+      "name": "Gosses Bluff (Tnorala)",
+      "lat": -23.82,
+      "lon": 132.3,
+      "old_diurnal_temp_swing_k": 48.02,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 25.04,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 25.27,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 26.32,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 26.75,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 26.49,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 26.37,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 26.76,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 28.46,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 29.81,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 29.53,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 28.38,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 27.4,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 27.215,
+      "day_weighted_mean_k": 27.2243,
+      "old_minus_new_k": 20.7957
+    },
+    {
+      "site_id": "GL-16",
+      "name": "Vredefort Dome",
+      "lat": -27,
+      "lon": 27.5,
+      "old_diurnal_temp_swing_k": 46.89,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 23.24,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 22.3,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 23.58,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 24.94,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 25.51,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 25.15,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 26.85,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 30.15,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 30.66,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 29.53,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 28.51,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 24.77,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 26.2658,
+      "day_weighted_mean_k": 26.2869,
+      "old_minus_new_k": 20.6031
+    },
+    {
+      "site_id": "GL-17",
+      "name": "Wadi Rum",
+      "lat": 29.58,
+      "lon": 35.42,
+      "old_diurnal_temp_swing_k": 48.92,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 25.46,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 27.81,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 28.67,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 29.67,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 28.89,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 26.87,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 25.67,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 24.95,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 25.0,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 25.51,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 25.31,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 24.67,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 26.54,
+      "day_weighted_mean_k": 26.5277,
+      "old_minus_new_k": 22.3923
+    },
+    {
+      "site_id": "GL-18",
+      "name": "White Desert",
+      "lat": 27.3,
+      "lon": 28.17,
+      "old_diurnal_temp_swing_k": 45.56,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 21.11,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 25.3,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 27.75,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 29.21,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 28.7,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 24.47,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 21.87,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 20.54,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 21.75,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 23.27,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 21.64,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 21.03,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 23.8867,
+      "day_weighted_mean_k": 23.8709,
+      "old_minus_new_k": 21.6891
+    },
+    {
+      "site_id": "GL-19",
+      "name": "Askja Caldera",
+      "lat": 65.03,
+      "lon": -16.75,
+      "old_diurnal_temp_swing_k": 34.14,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 19.92,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 19.97,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.42,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 17.27,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 13.84,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 9.3,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 7.58,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 8.57,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 11.82,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 16.33,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 18.6,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 20.77,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 15.2825,
+      "day_weighted_mean_k": 15.2553,
+      "old_minus_new_k": 18.8847
+    },
+    {
+      "site_id": "GL-20",
+      "name": "Kau Desert",
+      "lat": 19.3,
+      "lon": -155.35,
+      "old_diurnal_temp_swing_k": 20.53,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 12.03,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 12.19,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 11.66,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 10.83,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 11.32,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 10.78,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 11.31,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 10.95,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 10.61,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 10.65,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 11.06,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 10.91,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 11.1917,
+      "day_weighted_mean_k": 11.1875,
+      "old_minus_new_k": 9.3425
+    },
+    {
+      "site_id": "GL-21",
+      "name": "Richat Structure",
+      "lat": 21.12,
+      "lon": -11.4,
+      "old_diurnal_temp_swing_k": 41.58,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 21.4,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 23.95,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 25.74,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 25.8,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 24.65,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 23.45,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 20.54,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 20.52,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 20.24,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 21.99,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 22.77,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 22.49,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 22.795,
+      "day_weighted_mean_k": 22.7825,
+      "old_minus_new_k": 18.7975
+    },
+    {
+      "site_id": "GL-22",
+      "name": "Taklamakan Desert",
+      "lat": 38.9,
+      "lon": 83.5,
+      "old_diurnal_temp_swing_k": 61.95,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 19.14,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 24.95,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 29.41,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 30.74,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 27.71,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 23.56,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 21.5,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 21.75,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 24.15,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 26.4,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 23.59,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 19.31,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 24.3508,
+      "day_weighted_mean_k": 24.3332,
+      "old_minus_new_k": 37.6168
+    },
+    {
+      "site_id": "GL-23",
+      "name": "Gurvan Saikhan, Gobi",
+      "lat": 43.5,
+      "lon": 102.3,
+      "old_diurnal_temp_swing_k": 66.62,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 24.2,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 28.19,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 33.05,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 32.33,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 32.9,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 28.54,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 24.55,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 26.83,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 29.29,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 29.31,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 27.73,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 24.59,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 28.4592,
+      "day_weighted_mean_k": 28.4503,
+      "old_minus_new_k": 38.1697
+    },
+    {
+      "site_id": "GL-24",
+      "name": "Rio Tinto Acid River",
+      "lat": 37.72,
+      "lon": -6.55,
+      "old_diurnal_temp_swing_k": 50.87,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 19.96,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 21.14,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 23.48,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 24.03,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 26.8,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 27.9,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 26.66,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 25.92,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 24.67,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 24.67,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 22.35,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 19.86,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 23.9533,
+      "day_weighted_mean_k": 23.9679,
+      "old_minus_new_k": 26.9021
+    },
+    {
+      "site_id": "GL-25",
+      "name": "Mount Etna Summit",
+      "lat": 37.75,
+      "lon": 14.99,
+      "old_diurnal_temp_swing_k": 40.09,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 12.35,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 13.93,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 16.03,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 16.49,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 17.58,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 19.33,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 17.65,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 16.95,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 16.01,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 15.47,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 14.22,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 12.91,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 15.7433,
+      "day_weighted_mean_k": 15.7498,
+      "old_minus_new_k": 24.3402
+    },
+    {
+      "site_id": "GL-26",
+      "name": "Timanfaya Volcanic Field",
+      "lat": 29,
+      "lon": -13.75,
+      "old_diurnal_temp_swing_k": 15.47,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 5.68,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 6.01,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 6.86,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 6.6,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 6.17,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 5.39,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 4.77,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 4.71,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 5.07,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 6.22,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 6.54,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 5.59,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 5.8008,
+      "day_weighted_mean_k": 5.798,
+      "old_minus_new_k": 9.672
+    },
+    {
+      "site_id": "GL-27",
+      "name": "Atakor Volcanic Massif, Hoggar",
+      "lat": 23.3,
+      "lon": 5.55,
+      "old_diurnal_temp_swing_k": 45.04,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 24.59,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 26.26,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 27.09,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 25.62,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 22.41,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 19.51,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 18.82,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 18.19,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 18.45,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 20.66,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 22.09,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 24.49,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 22.3483,
+      "day_weighted_mean_k": 22.3264,
+      "old_minus_new_k": 22.7136
+    },
+    {
+      "site_id": "GL-28",
+      "name": "Ubehebe Crater",
+      "lat": 36.31,
+      "lon": -117.45,
+      "old_diurnal_temp_swing_k": 52.31,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 24.05,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 25.16,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 28.13,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 29.62,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 30.14,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 30.15,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 24.59,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 23.63,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 27.53,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 28.79,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 27.05,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 24.44,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 26.94,
+      "day_weighted_mean_k": 26.9366,
+      "old_minus_new_k": 25.3734
+    },
+    {
+      "site_id": "GL-29",
+      "name": "Badwater Basin, Death Valley",
+      "lat": 36.23,
+      "lon": -116.77,
+      "old_diurnal_temp_swing_k": 52.43,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 23.29,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 25.43,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 28.31,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 30.01,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 30.53,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 29.86,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 26.25,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 24.73,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 27.64,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 28.44,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 27.02,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 23.26,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 27.0642,
+      "day_weighted_mean_k": 27.0604,
+      "old_minus_new_k": 25.3696
+    },
+    {
+      "site_id": "GL-30",
+      "name": "Flaming Mountains, Turpan",
+      "lat": 42.88,
+      "lon": 89.55,
+      "old_diurnal_temp_swing_k": 65.08,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 18.78,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 22.57,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 28.17,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 32.11,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 29.27,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 25.61,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 23.29,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 24.57,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 27.08,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 26.58,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 23.57,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 19.96,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 25.13,
+      "day_weighted_mean_k": 25.1295,
+      "old_minus_new_k": 39.9505
+    },
+    {
+      "site_id": "PL-01",
+      "name": "Bockfjorden Volcanic Complex (Sverrefjellet)",
+      "lat": 79.4,
+      "lon": 13.5,
+      "old_diurnal_temp_swing_k": 51.29,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 22.61,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 21.56,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 20.67,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 21.32,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 14.51,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 8.98,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 7.89,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 9.51,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 11.81,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 15.74,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 18.24,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 19.83,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 16.0558,
+      "day_weighted_mean_k": 16.0212,
+      "old_minus_new_k": 35.2688
+    },
+    {
+      "site_id": "PL-02",
+      "name": "Adventdalen Permafrost",
+      "lat": 78.19,
+      "lon": 16.05,
+      "old_diurnal_temp_swing_k": 49.51,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 23.54,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 23.67,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 23.05,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 21.37,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 12.82,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 8.56,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 8.12,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 9.48,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 11.23,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 16.89,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 19.26,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 21.79,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 16.6483,
+      "day_weighted_mean_k": 16.6075,
+      "old_minus_new_k": 32.9025
+    },
+    {
+      "site_id": "PL-03",
+      "name": "Wright Valley, McMurdo Dry Valleys",
+      "lat": -77.52,
+      "lon": 161.8,
+      "old_diurnal_temp_swing_k": 48.22,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 14.76,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 18.31,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 20.17,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 21.52,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 23.33,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 24.21,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 23.05,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 23.61,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 23.03,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 21.6,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 19.36,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 14.66,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 20.6342,
+      "day_weighted_mean_k": 20.638,
+      "old_minus_new_k": 27.582
+    },
+    {
+      "site_id": "PL-04",
+      "name": "Taylor Valley, McMurdo Dry Valleys",
+      "lat": -77.62,
+      "lon": 163,
+      "old_diurnal_temp_swing_k": 46.95,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 12.27,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 15.47,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.4,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 20.82,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 22.87,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 23.25,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 21.82,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 22.59,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 21.64,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 20.51,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 18.41,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 12.7,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 19.3125,
+      "day_weighted_mean_k": 19.3253,
+      "old_minus_new_k": 27.6247
+    },
+    {
+      "site_id": "PL-05",
+      "name": "Beacon Valley Buried Ice",
+      "lat": -77.83,
+      "lon": 160.65,
+      "old_diurnal_temp_swing_k": 51.85,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 15.23,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 19.62,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 22.23,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 22.87,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 25.04,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 26.08,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 25.52,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 25.58,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 24.58,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 22.51,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 19.92,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 14.66,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 21.9867,
+      "day_weighted_mean_k": 21.991,
+      "old_minus_new_k": 29.859
+    },
+    {
+      "site_id": "PL-06",
+      "name": "Victoria Valley, McMurdo Dry Valleys",
+      "lat": -77.33,
+      "lon": 162,
+      "old_diurnal_temp_swing_k": 48.22,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 14.76,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 18.31,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 20.17,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 21.52,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 23.33,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 24.21,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 23.05,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 23.61,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 23.03,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 21.6,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 19.36,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 14.66,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 20.6342,
+      "day_weighted_mean_k": 20.638,
+      "old_minus_new_k": 27.582
+    },
+    {
+      "site_id": "PL-07",
+      "name": "Haughton Crater Eastern Rim, Devon Island",
+      "lat": 75.38,
+      "lon": -89.27,
+      "old_diurnal_temp_swing_k": 65.36,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 21.2,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 21.08,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 26.32,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 22.88,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 18.02,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 15.75,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 13.2,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 13.9,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 15.81,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 22.47,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 22.16,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 22.63,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 19.6183,
+      "day_weighted_mean_k": 19.6115,
+      "old_minus_new_k": 45.7485
+    },
+    {
+      "site_id": "PL-08",
+      "name": "Kazumura Lava Tube",
+      "lat": 19.49,
+      "lon": -155.08,
+      "old_diurnal_temp_swing_k": 13.71,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 7.62,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 7.81,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 7.68,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 6.65,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 6.48,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 5.81,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 6.15,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 6.07,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 6.2,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 6.24,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 6.58,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 6.84,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 6.6775,
+      "day_weighted_mean_k": 6.6722,
+      "old_minus_new_k": 7.0378
+    },
+    {
+      "site_id": "PL-09",
+      "name": "Mount Erebus Ice Caves",
+      "lat": -77.53,
+      "lon": 167.15,
+      "old_diurnal_temp_swing_k": 42.6,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 9.95,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 13.85,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.92,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 20.48,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 21.35,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 22.38,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 21.2,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 22.07,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 20.44,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 18.81,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 17.08,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 10.06,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 18.1325,
+      "day_weighted_mean_k": 18.1462,
+      "old_minus_new_k": 24.4538
+    },
+    {
+      "site_id": "PL-10",
+      "name": "Disko Island Basalts (Qeqertarsuaq)",
+      "lat": 69.25,
+      "lon": -53.5,
+      "old_diurnal_temp_swing_k": 56.48,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 22.56,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 25.45,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 26.58,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 23.11,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 16.51,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 15.1,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 13.6,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 13.54,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 14.51,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 16.9,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 18.85,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 20.31,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 18.9183,
+      "day_weighted_mean_k": 18.8759,
+      "old_minus_new_k": 37.6041
+    },
+    {
+      "site_id": "PL-11",
+      "name": "Expedition Fiord, Axel Heiberg Island",
+      "lat": 79.38,
+      "lon": -90.75,
+      "old_diurnal_temp_swing_k": 61.85,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 20.76,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 20.91,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 22.81,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 22.42,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 19.07,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 15.89,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 12.06,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 15.37,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 17.12,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 21.43,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 19.26,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 21.63,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 19.0608,
+      "day_weighted_mean_k": 19.0499,
+      "old_minus_new_k": 42.8001
+    },
+    {
+      "site_id": "PL-12",
+      "name": "Lake Hazen Region",
+      "lat": 81.8,
+      "lon": -71.3,
+      "old_diurnal_temp_swing_k": 61.52,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 22.28,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 20.95,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 22.62,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 23.33,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 19.4,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 15.99,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 11.72,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 16.71,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 17.44,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 19.73,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 20.14,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 20.58,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 19.2408,
+      "day_weighted_mean_k": 19.227,
+      "old_minus_new_k": 42.293
+    },
+    {
+      "site_id": "PL-13",
+      "name": "Pingualuit Crater",
+      "lat": 61.28,
+      "lon": -73.67,
+      "old_diurnal_temp_swing_k": 72.98,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 29.7,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 29.44,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 33.33,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 26.61,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 21.22,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 21.89,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 20.45,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 20.05,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 18.7,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 18.57,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 21.67,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 27.98,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 24.1342,
+      "day_weighted_mean_k": 24.1116,
+      "old_minus_new_k": 48.8684
+    },
+    {
+      "site_id": "PL-14",
+      "name": "Batagaika Megaslump",
+      "lat": 67.58,
+      "lon": 134.77,
+      "old_diurnal_temp_swing_k": 89.87,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 27.05,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 25.78,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 34.26,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 29.13,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 31.25,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 25.99,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 25.22,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 24.71,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 22.17,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 29.08,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 28.72,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 27.12,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 27.54,
+      "day_weighted_mean_k": 27.5658,
+      "old_minus_new_k": 62.3042
+    },
+    {
+      "site_id": "PL-15",
+      "name": "Lake Vida",
+      "lat": -77.38,
+      "lon": 161.93,
+      "old_diurnal_temp_swing_k": 48.22,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 14.76,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 18.31,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 20.17,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 21.52,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 23.33,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 24.21,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 23.05,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 23.61,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 23.03,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 21.6,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 19.36,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 14.66,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 20.6342,
+      "day_weighted_mean_k": 20.638,
+      "old_minus_new_k": 27.582
+    },
+    {
+      "site_id": "PL-16",
+      "name": "Blood Falls, Taylor Glacier",
+      "lat": -77.72,
+      "lon": 162.27,
+      "old_diurnal_temp_swing_k": 47.42,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 13.38,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 16.73,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.49,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 20.92,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 22.88,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 23.53,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 22.13,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 22.85,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 22.12,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 20.81,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 18.75,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 13.51,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 19.7583,
+      "day_weighted_mean_k": 19.766,
+      "old_minus_new_k": 27.654
+    },
+    {
+      "site_id": "PL-17",
+      "name": "Mount Melbourne",
+      "lat": -74.35,
+      "lon": 164.7,
+      "old_diurnal_temp_swing_k": 43.53,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 10.6,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 13.71,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 18.78,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 19.28,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 21.38,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 21.3,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 21.75,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 21.93,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 20.6,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 19.39,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 17.67,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 11.84,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 18.1858,
+      "day_weighted_mean_k": 18.2059,
+      "old_minus_new_k": 25.3241
+    },
+    {
+      "site_id": "PL-18",
+      "name": "Deception Island Caldera",
+      "lat": -62.97,
+      "lon": -60.65,
+      "old_diurnal_temp_swing_k": 25.01,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 3.88,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 4.74,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 7.04,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 9.66,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 10.35,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 12.38,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 14.87,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 15.51,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 13.47,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 8.41,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 5.56,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 4.3,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 9.1808,
+      "day_weighted_mean_k": 9.2054,
+      "old_minus_new_k": 15.8046
+    },
+    {
+      "site_id": "PL-19",
+      "name": "Utqia\u0121vik Permafrost",
+      "lat": 71.29,
+      "lon": -156.77,
+      "old_diurnal_temp_swing_k": 50.71,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 24.15,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 23.23,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 21.25,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 21.53,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 16.01,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 12.05,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 10.59,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 8.43,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 7.37,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 10.83,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 20.21,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 22.16,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 16.4842,
+      "day_weighted_mean_k": 16.4418,
+      "old_minus_new_k": 34.2682
+    },
+    {
+      "site_id": "PL-20",
+      "name": "CRREL Permafrost Tunnel",
+      "lat": 64.95,
+      "lon": -147.62,
+      "old_diurnal_temp_swing_k": 70.63,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 34.88,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 32.55,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 31.32,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 29.4,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 25.59,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 20.08,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 18.67,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 20.07,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 20.83,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 24.89,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 25.65,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 31.88,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 26.3175,
+      "day_weighted_mean_k": 26.2918,
+      "old_minus_new_k": 44.3382
+    },
+    {
+      "site_id": "PL-21",
+      "name": "Tuktoyaktuk Pingos",
+      "lat": 69.45,
+      "lon": -133,
+      "old_diurnal_temp_swing_k": 65.45,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 29.03,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 25.82,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 26.1,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 25.09,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 25.08,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 20.58,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 18.16,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 16.53,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 14.68,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 18.05,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 23.41,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 27.52,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 22.5042,
+      "day_weighted_mean_k": 22.4941,
+      "old_minus_new_k": 42.9559
+    },
+    {
+      "site_id": "PL-22",
+      "name": "Kverkfj\u00f6ll Ice Caves",
+      "lat": 64.65,
+      "lon": -16.72,
+      "old_diurnal_temp_swing_k": 33.86,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 20.67,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 20.36,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.96,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 17.93,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 14.57,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 9.21,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 7.21,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 8.71,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 12.3,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 16.74,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 18.99,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 21.45,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 15.675,
+      "day_weighted_mean_k": 15.6482,
+      "old_minus_new_k": 18.2118
+    },
+    {
+      "site_id": "PL-23",
+      "name": "Holuhraun Lava Field",
+      "lat": 64.85,
+      "lon": -16.8,
+      "old_diurnal_temp_swing_k": 34.14,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 19.92,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 19.97,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.42,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 17.27,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 13.84,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 9.3,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 7.58,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 8.57,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 11.82,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 16.33,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 18.6,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 20.77,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 15.2825,
+      "day_weighted_mean_k": 15.2553,
+      "old_minus_new_k": 18.8847
+    },
+    {
+      "site_id": "PL-24",
+      "name": "Surtsey",
+      "lat": 63.3,
+      "lon": -20.6,
+      "old_diurnal_temp_swing_k": 27.83,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 11.61,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 11.6,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 10.69,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 9.76,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 9.54,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 7.92,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 7.86,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 7.46,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 8.13,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 9.59,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 10.71,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 12.15,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 9.7517,
+      "day_weighted_mean_k": 9.7433,
+      "old_minus_new_k": 18.0867
+    },
+    {
+      "site_id": "PL-25",
+      "name": "Beerenberg, Jan Mayen",
+      "lat": 71.08,
+      "lon": -8.17,
+      "old_diurnal_temp_swing_k": 24,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 11.24,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 10.55,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 11.09,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 9.63,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 6.17,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 5.05,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 4.51,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 4.53,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 6.26,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 8.73,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 10.0,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 11.52,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 8.2733,
+      "day_weighted_mean_k": 8.2605,
+      "old_minus_new_k": 15.7395
+    },
+    {
+      "site_id": "PL-26",
+      "name": "Tanggula Permafrost, Tibetan Plateau",
+      "lat": 33.07,
+      "lon": 91.93,
+      "old_diurnal_temp_swing_k": 51.5,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 24.42,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 23.65,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 25.74,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 24.93,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 22.73,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 23.44,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 22.07,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 21.53,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 21.04,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 24.67,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 22.3,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 23.2,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 23.31,
+      "day_weighted_mean_k": 23.3114,
+      "old_minus_new_k": 28.1886
+    },
+    {
+      "site_id": "PL-27",
+      "name": "Ny-\u00c5lesund / Br\u00f8gger Peninsula",
+      "lat": 78.92,
+      "lon": 11.93,
+      "old_diurnal_temp_swing_k": 41.68,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 21.36,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 20.62,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.79,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 19.2,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 12.45,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 8.3,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 6.57,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 7.74,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 10.54,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 15.27,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 17.72,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 19.72,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 14.94,
+      "day_weighted_mean_k": 14.9043,
+      "old_minus_new_k": 26.7757
+    },
+    {
+      "site_id": "PL-28",
+      "name": "Mutnovsky Volcano",
+      "lat": 52.45,
+      "lon": 158.2,
+      "old_diurnal_temp_swing_k": 57.64,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 23.18,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 22.55,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 19.92,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 15.9,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 14.63,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 19.13,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 17.21,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 15.84,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 17.07,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 16.41,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 17.06,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 21.19,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 18.3408,
+      "day_weighted_mean_k": 18.3178,
+      "old_minus_new_k": 39.3222
+    },
+    {
+      "site_id": "PL-29",
+      "name": "Schirmacher Oasis",
+      "lat": -70.75,
+      "lon": 11.65,
+      "old_diurnal_temp_swing_k": 45.21,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 12.16,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 15.73,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 18.47,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 22.03,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 21.55,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 23.56,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 25.67,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 25.81,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 24.44,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 23.16,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 18.12,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 13.79,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 20.3742,
+      "day_weighted_mean_k": 20.3941,
+      "old_minus_new_k": 24.8159
+    },
+    {
+      "site_id": "PL-30",
+      "name": "Lake Untersee",
+      "lat": -71.35,
+      "lon": 13.45,
+      "old_diurnal_temp_swing_k": 41.69,
+      "valid_months": 12,
+      "monthly_ranges": [
+        {
+          "month": "JAN",
+          "range_k": 13.33,
+          "days": 31
+        },
+        {
+          "month": "FEB",
+          "range_k": 15.18,
+          "days": 28
+        },
+        {
+          "month": "MAR",
+          "range_k": 15.87,
+          "days": 31
+        },
+        {
+          "month": "APR",
+          "range_k": 17.69,
+          "days": 30
+        },
+        {
+          "month": "MAY",
+          "range_k": 18.02,
+          "days": 31
+        },
+        {
+          "month": "JUN",
+          "range_k": 19.03,
+          "days": 30
+        },
+        {
+          "month": "JUL",
+          "range_k": 20.06,
+          "days": 31
+        },
+        {
+          "month": "AUG",
+          "range_k": 20.04,
+          "days": 31
+        },
+        {
+          "month": "SEP",
+          "range_k": 20.16,
+          "days": 30
+        },
+        {
+          "month": "OCT",
+          "range_k": 19.71,
+          "days": 31
+        },
+        {
+          "month": "NOV",
+          "range_k": 16.57,
+          "days": 30
+        },
+        {
+          "month": "DEC",
+          "range_k": 13.8,
+          "days": 31
+        }
+      ],
+      "equal_month_mean_k": 17.455,
+      "day_weighted_mean_k": 17.4638,
+      "old_minus_new_k": 24.2262
+    }
+  ],
+  "errors": []
+}

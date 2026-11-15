@@ -1,0 +1,86 @@
+site_id,name,region,lat,lon,is_benchmark,terrain_type,distance_to_road_km,is_protected_area
+BM-01,Atacama Desert (Yungay),Chile,-24.1,-70.0,True,hyperarid_desert,20.0,False
+BM-02,"Haughton Impact Crater, Devon Island","Nunavut, Canada",75.38,-89.68,True,impact_crater_polar_desert,350.0,False
+BM-03,Mauna Kea Summit,"Hawaii, USA",19.82,-155.47,True,volcanic_cinder_summit,0.5,True
+BM-04,Stefanshéllir Lava Cave (Hallmundarhraun),Iceland,64.77,-20.87,True,lava_tube_basaltic,2.0,True
+BM-05,Mojave Desert (Amboy Crater),"California, USA",34.56,-115.78,True,volcanic_cinder_cone_desert,1.5,True
+SEA-01,Mount Tambora Caldera,"Sumbawa, Indonesia",-8.25,118.0,False,caldera_floor,8.0,True
+SEA-02,Mount Tambora Pyroclastic Slopes,"Sumbawa, Indonesia",-8.33,118.0,False,pyroclastic_slope,3.0,True
+SEA-03,Mount Bromo Sea of Sand,"East Java, Indonesia",-7.96,112.95,False,volcanic_sand_plain,1.0,True
+SEA-04,Kawah Ijen Crater,"East Java, Indonesia",-8.06,114.24,False,acidic_crater_lake_solfatara,3.0,True
+SEA-05,Mount Rinjani Caldera (Segara Anak),"Lombok, Indonesia",-8.41,116.46,False,caldera_lake,10.0,True
+SEA-06,Gunung Sewu Karst Caves (Jomblang),"Yogyakarta, Indonesia",-8.0,110.65,False,tropical_karst_cave,1.0,False
+SEA-07,Merapi Pyroclastic Plains (Gendol),"Central Java, Indonesia",-7.6,110.47,False,pyroclastic_flow_plain,2.0,True
+SEA-08,Anak Krakatau,"Sunda Strait, Indonesia",-6.1,105.42,False,young_volcanic_island,40.0,True
+SEA-09,Mount Semeru Pyroclastic Flows,"East Java, Indonesia",-8.15,112.93,False,pyroclastic_flow_plain,4.0,True
+SEA-10,Dieng Plateau Craters (Sikidang),"Central Java, Indonesia",-7.21,109.91,False,fumarolic_volcanic_plateau,0.3,False
+SEA-11,Mount Sinabung,"North Sumatra, Indonesia",3.17,98.39,False,stratovolcano_lava_dome,3.0,False
+SEA-12,Toba Caldera (Samosir),"North Sumatra, Indonesia",2.68,98.88,False,supervolcano_caldera,1.0,False
+SEA-13,Kelud Crater,"East Java, Indonesia",-7.93,112.31,False,crater_lake_volcano,2.0,False
+SEA-14,Kelimutu Crater Lakes,"Flores, Indonesia",-8.77,121.82,False,tricolor_crater_lakes,1.0,True
+SEA-15,Taal Volcano Island,"Luzon, Philippines",14.0,120.99,False,maar_crater_island,6.0,True
+SEA-16,Mayon Volcano,"Luzon, Philippines",13.26,123.69,False,stratovolcano_pyroclastic,3.0,True
+SEA-17,Mount Pinatubo Caldera,"Luzon, Philippines",15.14,120.35,False,caldera_lahar_deposits,10.0,True
+SEA-18,Son Doong Cave,"Quang Binh, Vietnam",17.45,106.29,False,giant_karst_cave,15.0,True
+SEA-19,"Deer Cave, Gunung Mulu","Sarawak, Malaysia",4.03,114.81,False,tropical_karst_cave,3.0,True
+SEA-20,Batur Caldera,"Bali, Indonesia",-8.24,115.38,False,caldera_lava_field,0.5,False
+GL-01,Pamir Plateau (Murghab),Tajikistan,38.17,73.96,False,high_altitude_cold_desert,1.0,False
+GL-02,Lut Desert (Shahdad Kaluts),Iran,30.45,57.75,False,hyperarid_yardang_field,8.0,True
+GL-03,Erta Ale Lava Lake,"Afar, Ethiopia",13.6,40.67,False,basaltic_shield_lava_lake,90.0,False
+GL-04,Namib Gravel Plains,Namibia,-23.5,15.2,False,gravel_plain_desert,3.0,True
+GL-05,Puna de Atacama (Salar de Antofalla),Argentina,-25.6,-67.65,False,high_altitude_salar_volcanic,25.0,False
+GL-06,Pinacate Volcanic Field,"Sonora, Mexico",31.77,-113.5,False,volcanic_field_maar_craters,8.0,True
+GL-07,Dallol Hydrothermal Field,"Afar, Ethiopia",14.24,40.3,False,hydrothermal_salt_plain,40.0,False
+GL-08,Salar de Uyuni,Bolivia,-20.13,-67.49,False,salt_flat,5.0,False
+GL-09,"Trou au Natron, Tibesti",Chad,20.97,16.55,False,volcanic_caldera_desert,120.0,False
+GL-10,Aorounga Impact Structure,Chad,19.1,19.25,False,eroded_impact_structure,200.0,False
+GL-11,Wolfe Creek Crater,Western Australia,-19.17,127.8,False,impact_crater_desert,1.0,True
+GL-12,Barringer (Meteor) Crater,"Arizona, USA",35.03,-111.02,False,simple_impact_crater,0.3,False
+GL-13,Ries Crater,"Bavaria, Germany",48.88,10.57,False,complex_impact_crater,0.5,False
+GL-14,Lonar Crater,"Maharashtra, India",19.98,76.51,False,basaltic_impact_crater_lake,0.5,True
+GL-15,Gosses Bluff (Tnorala),"Northern Territory, Australia",-23.82,132.3,False,complex_impact_structure,2.0,True
+GL-16,Vredefort Dome,South Africa,-27.0,27.5,False,impact_structure_dome,1.0,True
+GL-17,Wadi Rum,Jordan,29.58,35.42,False,sandstone_desert_canyon,3.0,True
+GL-18,White Desert,Egypt,27.3,28.17,False,chalk_yardang_desert,2.0,True
+GL-19,Askja Caldera,Iceland,65.03,-16.75,False,caldera_basaltic_desert,3.0,True
+GL-20,Kau Desert,"Hawaii, USA",19.3,-155.35,False,volcanic_ash_desert,5.0,True
+GL-21,Richat Structure,Mauritania,21.12,-11.4,False,eroded_dome_sahara,20.0,False
+GL-22,Taklamakan Desert,"Xinjiang, China",38.9,83.5,False,dune_sea_desert,5.0,False
+GL-23,"Gurvan Saikhan, Gobi",Mongolia,43.5,102.3,False,cold_desert_mountains,30.0,True
+GL-24,Rio Tinto Acid River,"Andalusia, Spain",37.72,-6.55,False,acidic_iron_sulfate_terrain,0.5,False
+GL-25,Mount Etna Summit,"Sicily, Italy",37.75,14.99,False,basaltic_stratovolcano,4.0,True
+GL-26,Timanfaya Volcanic Field,"Lanzarote, Spain",29.0,-13.75,False,basaltic_lava_field,1.0,True
+GL-27,"Atakor Volcanic Massif, Hoggar",Algeria,23.3,5.55,False,volcanic_massif_desert,30.0,True
+GL-28,Ubehebe Crater,"California, USA",36.31,-117.45,False,maar_crater_desert,0.5,True
+GL-29,"Badwater Basin, Death Valley","California, USA",36.23,-116.77,False,salt_flat_basin,0.1,True
+GL-30,"Flaming Mountains, Turpan","Xinjiang, China",42.88,89.55,False,red_sandstone_badlands,2.0,False
+PL-01,Bockfjorden Volcanic Complex (Sverrefjellet),"Svalbard, Norway",79.4,13.5,False,polar_basaltic_volcano,100.0,True
+PL-02,Adventdalen Permafrost,"Svalbard, Norway",78.19,16.05,False,continuous_permafrost_valley,0.5,False
+PL-03,"Wright Valley, McMurdo Dry Valleys",Antarctica,-77.52,161.8,False,polar_desert_valley,100.0,True
+PL-04,"Taylor Valley, McMurdo Dry Valleys",Antarctica,-77.62,163.0,False,polar_desert_valley,90.0,True
+PL-05,Beacon Valley Buried Ice,Antarctica,-77.83,160.65,False,buried_glacier_ice_polar_desert,110.0,True
+PL-06,"Victoria Valley, McMurdo Dry Valleys",Antarctica,-77.33,162.0,False,polar_desert_dunes,120.0,True
+PL-07,"Haughton Crater Eastern Rim, Devon Island","Nunavut, Canada",75.38,-89.27,False,impact_crater_rim_polar_desert,340.0,False
+PL-08,Kazumura Lava Tube,"Hawaii, USA",19.49,-155.08,False,lava_tube_basaltic,1.0,False
+PL-09,Mount Erebus Ice Caves,Antarctica,-77.53,167.15,False,volcanic_fumarolic_ice_caves,40.0,True
+PL-10,Disko Island Basalts (Qeqertarsuaq),Greenland,69.25,-53.5,False,arctic_flood_basalt,10.0,False
+PL-11,"Expedition Fiord, Axel Heiberg Island","Nunavut, Canada",79.38,-90.75,False,polar_gypsum_cold_springs,500.0,False
+PL-12,Lake Hazen Region,"Nunavut, Canada",81.8,-71.3,False,high_arctic_polar_desert,650.0,True
+PL-13,Pingualuit Crater,"Quebec, Canada",61.28,-73.67,False,arctic_impact_crater_lake,130.0,True
+PL-14,Batagaika Megaslump,"Yakutia, Russia",67.58,134.77,False,thermokarst_ice_rich_permafrost,8.0,False
+PL-15,Lake Vida,Antarctica,-77.38,161.93,False,hypersaline_ice_sealed_lake,110.0,True
+PL-16,"Blood Falls, Taylor Glacier",Antarctica,-77.72,162.27,False,subglacial_brine_outflow,85.0,True
+PL-17,Mount Melbourne,Antarctica,-74.35,164.7,False,polar_stratovolcano_fumaroles,300.0,True
+PL-18,Deception Island Caldera,Antarctica,-62.97,-60.65,False,flooded_caldera_pyroclastic,800.0,True
+PL-19,Utqiaġvik Permafrost,"Alaska, USA",71.29,-156.77,False,arctic_coastal_polygon_ground,1.0,False
+PL-20,CRREL Permafrost Tunnel,"Alaska, USA",64.95,-147.62,False,subsurface_permafrost_tunnel,0.5,False
+PL-21,Tuktoyaktuk Pingos,"NWT, Canada",69.45,-133.0,False,pingo_ground_ice,2.0,True
+PL-22,Kverkfjöll Ice Caves,Iceland,64.65,-16.72,False,geothermal_subglacial_caves,5.0,True
+PL-23,Holuhraun Lava Field,Iceland,64.85,-16.8,False,recent_basaltic_lava_field,6.0,True
+PL-24,Surtsey,Iceland,63.3,-20.6,False,young_volcanic_island,20.0,True
+PL-25,"Beerenberg, Jan Mayen",Norway,71.08,-8.17,False,arctic_volcano_glaciated,10.0,True
+PL-26,"Tanggula Permafrost, Tibetan Plateau","Tibet, China",33.07,91.93,False,alpine_permafrost_plateau,1.0,False
+PL-27,Ny-Ålesund / Brøgger Peninsula,"Svalbard, Norway",78.92,11.93,False,high_arctic_periglacial,0.5,True
+PL-28,Mutnovsky Volcano,"Kamchatka, Russia",52.45,158.2,False,fumarolic_volcano_glacier,12.0,True
+PL-29,Schirmacher Oasis,Antarctica,-70.75,11.65,False,polar_oasis_periglacial,0.5,False
+PL-30,Lake Untersee,Antarctica,-71.35,13.45,False,perennially_ice_covered_lake,80.0,False

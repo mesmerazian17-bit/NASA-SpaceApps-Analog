@@ -1,0 +1,2498 @@
+{
+  "audit_version": "1.0",
+  "earth_sites_evaluated": 85,
+  "target": "Artemis III Connecting Ridge",
+  "coverage_percent_calculated": false,
+  "policy": [
+    "Quantitative proxies are not proof of mission failure-mode fidelity.",
+    "Contextual evidence is not counted as quantitative coverage.",
+    "Unavailable evidence is never converted to zero.",
+    "No validated failure-mode coverage percentage is claimed."
+  ],
+  "sites": [
+    {
+      "site_id": "BM-01",
+      "site_name": "Atacama Desert (Yungay)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.5982,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.999545895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 21.4134,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "hyperarid_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "BM-02",
+      "site_name": "Haughton Impact Crater, Devon Island",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.3624,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.235345895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 19.6115,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "impact_crater_polar_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "BM-03",
+      "site_name": "Mauna Kea Summit",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 7.2951,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 5.3026458953857425,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 8.7761,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "volcanic_cinder_summit",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "BM-04",
+      "site_name": "Stefansh\u00e9llir Lava Cave (Hallmundarhraun)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 1.9574,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 10.640345895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 17.9064,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "lava_tube_basaltic",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "BM-05",
+      "site_name": "Mojave Desert (Amboy Crater)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.6681,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.929645895385741,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 27.1144,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "volcanic_cinder_cone_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-01",
+      "site_name": "Pamir Plateau (Murghab)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 11.7777,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 0.8200458953857428,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 23.6522,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "high_altitude_cold_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-02",
+      "site_name": "Lut Desert (Shahdad Kaluts)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.2066,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.391145895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 24.9632,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "hyperarid_yardang_field",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-03",
+      "site_name": "Erta Ale Lava Lake",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 3.1314,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 9.466345895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 17.9966,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "basaltic_shield_lava_lake",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-04",
+      "site_name": "Namib Gravel Plains",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.7687,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.829045895385741,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 27.3122,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "gravel_plain_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-05",
+      "site_name": "Puna de Atacama (Salar de Antofalla)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.0573,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.540445895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 25.1478,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "high_altitude_salar_volcanic",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-06",
+      "site_name": "Pinacate Volcanic Field",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 12.8359,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 0.23815410461425834,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 25.627,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "volcanic_field_maar_craters",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-07",
+      "site_name": "Dallol Hydrothermal Field",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.2431,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.354645895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 17.2089,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "hydrothermal_salt_plain",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-08",
+      "site_name": "Salar de Uyuni",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.081,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.516745895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 23.4717,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "salt_flat",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-09",
+      "site_name": "Trou au Natron, Tibesti",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 10.377,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 2.2207458953857415,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 21.5422,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "volcanic_caldera_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-10",
+      "site_name": "Aorounga Impact Structure",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 3.773,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 8.824745895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 23.9057,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "eroded_impact_structure",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-11",
+      "site_name": "Wolfe Creek Crater",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 1.668,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 10.929745895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 23.3548,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "impact_crater_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-12",
+      "site_name": "Barringer (Meteor) Crater",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 9.0716,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 3.526145895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 27.8448,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "simple_impact_crater",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-13",
+      "site_name": "Ries Crater",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.2066,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.391145895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 22.3159,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "complex_impact_crater",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-14",
+      "site_name": "Lonar Crater",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 5.6251,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 6.972645895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 19.1255,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "basaltic_impact_crater_lake",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-15",
+      "site_name": "Gosses Bluff (Tnorala)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 2.2999,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 10.297845895385741,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 27.2243,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "complex_impact_structure",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-16",
+      "site_name": "Vredefort Dome",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.6482,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.949545895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 26.2869,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "impact_structure_dome",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-17",
+      "site_name": "Wadi Rum",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 2.1198,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 10.477945895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 26.5277,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "sandstone_desert_canyon",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-18",
+      "site_name": "White Desert",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.3669,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.230845895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 23.8709,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "chalk_yardang_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-19",
+      "site_name": "Askja Caldera",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.0,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.597745895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 15.2553,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "caldera_basaltic_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-20",
+      "site_name": "Kau Desert",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 2.5356,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 10.062145895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 11.1875,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "volcanic_ash_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-21",
+      "site_name": "Richat Structure",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 1.3616,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.236145895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 22.7825,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "eroded_dome_sahara",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-22",
+      "site_name": "Taklamakan Desert",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 1.4672,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.130545895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 24.3332,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "dune_sea_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-23",
+      "site_name": "Gurvan Saikhan, Gobi",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.7793,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.818445895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 28.4503,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "cold_desert_mountains",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-24",
+      "site_name": "Rio Tinto Acid River",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 3.4926,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 9.105145895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 23.9679,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "acidic_iron_sulfate_terrain",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-25",
+      "site_name": "Mount Etna Summit",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 14.1804,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 1.5826541046142584,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 15.7498,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "basaltic_stratovolcano",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-26",
+      "site_name": "Timanfaya Volcanic Field",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 5.0974,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 7.500345895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 5.798,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "basaltic_lava_field",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-27",
+      "site_name": "Atakor Volcanic Massif, Hoggar",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 6.5309,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 6.066845895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 22.3264,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "volcanic_massif_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-28",
+      "site_name": "Ubehebe Crater",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 6.1478,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 6.449945895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 26.9366,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "maar_crater_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-29",
+      "site_name": "Badwater Basin, Death Valley",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 9.4716,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 3.1261458953857417,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 27.0604,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "salt_flat_basin",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "GL-30",
+      "site_name": "Flaming Mountains, Turpan",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.7179,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.879845895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 25.1295,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "red_sandstone_badlands",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-01",
+      "site_name": "Bockfjorden Volcanic Complex (Sverrefjellet)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 14.221,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 1.623254104614258,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 16.0212,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "polar_basaltic_volcano",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-02",
+      "site_name": "Adventdalen Permafrost",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 4.1245,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 8.473245895385741,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 16.6075,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "continuous_permafrost_valley",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-03",
+      "site_name": "Wright Valley, McMurdo Dry Valleys",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.9449,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.652845895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 20.638,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "polar_desert_valley",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-04",
+      "site_name": "Taylor Valley, McMurdo Dry Valleys",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 4.1095,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 8.488245895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 19.3253,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "polar_desert_valley",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-05",
+      "site_name": "Beacon Valley Buried Ice",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 2.7415,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 9.856245895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 21.991,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "buried_glacier_ice_polar_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-06",
+      "site_name": "Victoria Valley, McMurdo Dry Valleys",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.4051,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.192645895385741,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 20.638,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "polar_desert_dunes",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-07",
+      "site_name": "Haughton Crater Eastern Rim, Devon Island",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 7.1778,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 5.419945895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 19.6115,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "impact_crater_rim_polar_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-08",
+      "site_name": "Kazumura Lava Tube",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 2.1807,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 10.417045895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 6.6722,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "lava_tube_basaltic",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-09",
+      "site_name": "Mount Erebus Ice Caves",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 4.0172,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 8.580545895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 18.1462,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "volcanic_fumarolic_ice_caves",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-10",
+      "site_name": "Disko Island Basalts (Qeqertarsuaq)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 2.5096,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 10.088145895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 18.8759,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "arctic_flood_basalt",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-11",
+      "site_name": "Expedition Fiord, Axel Heiberg Island",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 10.5743,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 2.023445895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 19.0499,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "polar_gypsum_cold_springs",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-12",
+      "site_name": "Lake Hazen Region",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.5405,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.057245895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 19.227,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "high_arctic_polar_desert",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-13",
+      "site_name": "Pingualuit Crater",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.0,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.597745895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 24.1116,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "arctic_impact_crater_lake",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-14",
+      "site_name": "Batagaika Megaslump",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 3.6342,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 8.963545895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 27.5658,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "thermokarst_ice_rich_permafrost",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-15",
+      "site_name": "Lake Vida",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 6.2155,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 6.382245895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 20.638,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "hypersaline_ice_sealed_lake",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-16",
+      "site_name": "Blood Falls, Taylor Glacier",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 2.0176,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 10.580145895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 19.766,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "subglacial_brine_outflow",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-17",
+      "site_name": "Mount Melbourne",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 5.0783,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 7.519445895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 18.2059,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "polar_stratovolcano_fumaroles",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-18",
+      "site_name": "Deception Island Caldera",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 1.4321,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.165645895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 9.2054,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "flooded_caldera_pyroclastic",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-19",
+      "site_name": "Utqia\u0121vik Permafrost",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.1812,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.416545895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 16.4418,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "arctic_coastal_polygon_ground",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-20",
+      "site_name": "CRREL Permafrost Tunnel",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 3.2903,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 9.307445895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 26.2918,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "subsurface_permafrost_tunnel",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-21",
+      "site_name": "Tuktoyaktuk Pingos",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.2362,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.361545895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 22.4941,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "pingo_ground_ice",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-22",
+      "site_name": "Kverkfj\u00f6ll Ice Caves",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 8.1305,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 4.467245895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 15.6482,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "geothermal_subglacial_caves",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-23",
+      "site_name": "Holuhraun Lava Field",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.7793,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.818445895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 15.2553,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "recent_basaltic_lava_field",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-24",
+      "site_name": "Surtsey",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 6.1834,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 6.414345895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 9.7433,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "young_volcanic_island",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-25",
+      "site_name": "Beerenberg, Jan Mayen",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 17.1854,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 4.587654104614259,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 8.2605,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "arctic_volcano_glaciated",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-26",
+      "site_name": "Tanggula Permafrost, Tibetan Plateau",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 1.9881,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 10.609645895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 23.3114,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "alpine_permafrost_plateau",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-27",
+      "site_name": "Ny-\u00c5lesund / Br\u00f8gger Peninsula",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 2.8744,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 9.723345895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 14.9043,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "high_arctic_periglacial",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-28",
+      "site_name": "Mutnovsky Volcano",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 15.6776,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 3.079854104614258,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 18.3178,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "fumarolic_volcano_glacier",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-29",
+      "site_name": "Schirmacher Oasis",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 4.2326,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 8.365145895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 20.3941,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "polar_oasis_periglacial",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "PL-30",
+      "site_name": "Lake Untersee",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 3.7924,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 8.805345895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 17.4638,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "perennially_ice_covered_lake",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-01",
+      "site_name": "Mount Tambora Caldera",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.4171,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.180645895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 4.293,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "caldera_floor",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-02",
+      "site_name": "Mount Tambora Pyroclastic Slopes",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 4.0447,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 8.553045895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 8.3441,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "pyroclastic_slope",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-03",
+      "site_name": "Mount Bromo Sea of Sand",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 3.6135,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 8.984245895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 10.4484,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "volcanic_sand_plain",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-04",
+      "site_name": "Kawah Ijen Crater",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 7.3549,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 5.242845895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 8.2331,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "acidic_crater_lake_solfatara",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-05",
+      "site_name": "Mount Rinjani Caldera (Segara Anak)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 5.5826,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 7.015145895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 7.5889,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "caldera_lake",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-06",
+      "site_name": "Gunung Sewu Karst Caves (Jomblang)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.3624,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.235345895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 8.5008,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "tropical_karst_cave",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-07",
+      "site_name": "Merapi Pyroclastic Plains (Gendol)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 4.8828,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 7.714945895385743,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 11.7965,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "pyroclastic_flow_plain",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-08",
+      "site_name": "Anak Krakatau",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 9.5965,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 3.0012458953857415,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 4.4503,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "young_volcanic_island",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-09",
+      "site_name": "Mount Semeru Pyroclastic Flows",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 15.0015,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 2.403754104614258,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 10.4484,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "pyroclastic_flow_plain",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-10",
+      "site_name": "Dieng Plateau Craters (Sikidang)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 1.0517,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 11.546045895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 8.6999,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "fumarolic_volcanic_plateau",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-11",
+      "site_name": "Mount Sinabung",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 13.1447,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 0.5469541046142581,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 9.6145,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "stratovolcano_lava_dome",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-12",
+      "site_name": "Toba Caldera (Samosir)",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.0,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.597745895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 10.1267,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "supervolcano_caldera",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-13",
+      "site_name": "Kelud Crater",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 15.1783,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 2.580554104614258,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 11.0965,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "crater_lake_volcano",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-14",
+      "site_name": "Kelimutu Crater Lakes",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 6.9365,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 5.6612458953857425,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 4.6776,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "tricolor_crater_lakes",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-15",
+      "site_name": "Taal Volcano Island",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 10.6629,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 1.9348458953857417,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 10.5008,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "maar_crater_island",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-16",
+      "site_name": "Mayon Volcano",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 29.9549,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 17.357154104614256,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 5.2337,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "stratovolcano_pyroclastic",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-17",
+      "site_name": "Mount Pinatubo Caldera",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.1719,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.425845895385741,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 11.9934,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "caldera_lahar_deposits",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-18",
+      "site_name": "Son Doong Cave",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 15.4996,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 2.901854104614257,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 15.7635,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "giant_karst_cave",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-19",
+      "site_name": "Deer Cave, Gunung Mulu",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 0.4619,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 12.135845895385742,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 9.6356,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "tropical_karst_cave",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    },
+    {
+      "site_id": "SEA-20",
+      "site_name": "Batur Caldera",
+      "failure_mode_evidence": {
+        "steep_slope_traversal": {
+          "status": "quantitative_proxy",
+          "earth_value": 18.3963,
+          "target_value": 12.597745895385742,
+          "absolute_difference": 5.798554104614258,
+          "unit": "degrees",
+          "caveat": "Mean slope comparison; different spatial sampling scales."
+        },
+        "thermal_extremes": {
+          "status": "contextual_only",
+          "earth_value": 3.6344,
+          "unit": "K",
+          "reason": "Earth daily temperature range exists, but no equivalent lunar measurement is available."
+        },
+        "electrostatic_dust": {
+          "status": "contextual_only",
+          "earth_value": "caldera_lava_field",
+          "reason": "Terrain classification provides environmental context only; no direct dust grain, cohesion, or electrostatic measurements."
+        },
+        "illumination_shadow_navigation": {
+          "status": "unavailable",
+          "reason": "No matched solar illumination, shadow duration, or navigation measurements."
+        }
+      }
+    }
+  ],
+  "evidence_item_totals": {
+    "quantitative_proxy": 85,
+    "contextual_only": 170,
+    "unavailable": 85
+  },
+  "mars_targets": [
+    {
+      "target_id": "jezero",
+      "target_name": "Jezero Crater Fluvial Plain",
+      "numerical_scoring_eligible": false,
+      "reason": "No target environmental features currently populated."
+    },
+    {
+      "target_id": "arsia_mons_pit",
+      "target_name": "Arsia Mons Volcanic Collapse Pit",
+      "numerical_scoring_eligible": false,
+      "reason": "No target environmental features currently populated."
+    }
+  ]
+}

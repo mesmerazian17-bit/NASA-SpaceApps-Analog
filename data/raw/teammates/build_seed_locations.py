@@ -145,7 +145,8 @@ def validate(rows):
 def main():
     rows = build_rows()
     validate(rows)
-    out = Path(__file__).resolve().parent.parent / "data" / "seed_locations.csv"
+    PROJECT_ROOT = Path(__file__).resolve().parents[3]
+    out = PROJECT_ROOT / "data" / "seed_locations.csv"
     out.parent.mkdir(parents=True, exist_ok=True)
     with out.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=HEADER)
