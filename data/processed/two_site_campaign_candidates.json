@@ -1,0 +1,539 @@
+{
+  "engine_version": "0.1",
+  "target": "Artemis III Connecting Ridge",
+  "candidate_sites": 85,
+  "different_terrain_pairs_evaluated": 3565,
+  "selection_method": [
+    "Both sites must have different terrain categories.",
+    "Pairs are ranked by mean absolute slope difference.",
+    "Worst individual slope difference breaks ties."
+  ],
+  "interpretation": [
+    "This is an exploratory two-site shortlist.",
+    "Different terrain categories do not prove different failure-mode coverage.",
+    "No validated risk coverage percentage is calculated.",
+    "Slope comparison retains the Earth-versus-lunar scale limitation."
+  ],
+  "campaign_candidates": [
+    {
+      "sites": [
+        {
+          "site_id": "GL-06",
+          "site_name": "Pinacate Volcanic Field",
+          "terrain_type": "volcanic_field_maar_craters",
+          "slope_deg": 12.8359,
+          "slope_difference_deg": 0.23815410461425834,
+          "region": null
+        },
+        {
+          "site_id": "SEA-11",
+          "site_name": "Mount Sinabung",
+          "terrain_type": "stratovolcano_lava_dome",
+          "slope_deg": 13.1447,
+          "slope_difference_deg": 0.5469541046142581,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 0.3925541046142582,
+      "worst_site_slope_difference_deg": 0.5469541046142581,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 1
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-01",
+          "site_name": "Pamir Plateau (Murghab)",
+          "terrain_type": "high_altitude_cold_desert",
+          "slope_deg": 11.7777,
+          "slope_difference_deg": 0.8200458953857428,
+          "region": null
+        },
+        {
+          "site_id": "GL-06",
+          "site_name": "Pinacate Volcanic Field",
+          "terrain_type": "volcanic_field_maar_craters",
+          "slope_deg": 12.8359,
+          "slope_difference_deg": 0.23815410461425834,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 0.5291000000000006,
+      "worst_site_slope_difference_deg": 0.8200458953857428,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 2
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-01",
+          "site_name": "Pamir Plateau (Murghab)",
+          "terrain_type": "high_altitude_cold_desert",
+          "slope_deg": 11.7777,
+          "slope_difference_deg": 0.8200458953857428,
+          "region": null
+        },
+        {
+          "site_id": "SEA-11",
+          "site_name": "Mount Sinabung",
+          "terrain_type": "stratovolcano_lava_dome",
+          "slope_deg": 13.1447,
+          "slope_difference_deg": 0.5469541046142581,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 0.6835000000000004,
+      "worst_site_slope_difference_deg": 0.8200458953857428,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 3
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-06",
+          "site_name": "Pinacate Volcanic Field",
+          "terrain_type": "volcanic_field_maar_craters",
+          "slope_deg": 12.8359,
+          "slope_difference_deg": 0.23815410461425834,
+          "region": null
+        },
+        {
+          "site_id": "GL-25",
+          "site_name": "Mount Etna Summit",
+          "terrain_type": "basaltic_stratovolcano",
+          "slope_deg": 14.1804,
+          "slope_difference_deg": 1.5826541046142584,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 0.9104041046142584,
+      "worst_site_slope_difference_deg": 1.5826541046142584,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 4
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-06",
+          "site_name": "Pinacate Volcanic Field",
+          "terrain_type": "volcanic_field_maar_craters",
+          "slope_deg": 12.8359,
+          "slope_difference_deg": 0.23815410461425834,
+          "region": null
+        },
+        {
+          "site_id": "PL-01",
+          "site_name": "Bockfjorden Volcanic Complex (Sverrefjellet)",
+          "terrain_type": "polar_basaltic_volcano",
+          "slope_deg": 14.221,
+          "slope_difference_deg": 1.623254104614258,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 0.9307041046142581,
+      "worst_site_slope_difference_deg": 1.623254104614258,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 5
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-25",
+          "site_name": "Mount Etna Summit",
+          "terrain_type": "basaltic_stratovolcano",
+          "slope_deg": 14.1804,
+          "slope_difference_deg": 1.5826541046142584,
+          "region": null
+        },
+        {
+          "site_id": "SEA-11",
+          "site_name": "Mount Sinabung",
+          "terrain_type": "stratovolcano_lava_dome",
+          "slope_deg": 13.1447,
+          "slope_difference_deg": 0.5469541046142581,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.0648041046142582,
+      "worst_site_slope_difference_deg": 1.5826541046142584,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 6
+    },
+    {
+      "sites": [
+        {
+          "site_id": "PL-01",
+          "site_name": "Bockfjorden Volcanic Complex (Sverrefjellet)",
+          "terrain_type": "polar_basaltic_volcano",
+          "slope_deg": 14.221,
+          "slope_difference_deg": 1.623254104614258,
+          "region": null
+        },
+        {
+          "site_id": "SEA-11",
+          "site_name": "Mount Sinabung",
+          "terrain_type": "stratovolcano_lava_dome",
+          "slope_deg": 13.1447,
+          "slope_difference_deg": 0.5469541046142581,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.085104104614258,
+      "worst_site_slope_difference_deg": 1.623254104614258,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 7
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-06",
+          "site_name": "Pinacate Volcanic Field",
+          "terrain_type": "volcanic_field_maar_craters",
+          "slope_deg": 12.8359,
+          "slope_difference_deg": 0.23815410461425834,
+          "region": null
+        },
+        {
+          "site_id": "SEA-15",
+          "site_name": "Taal Volcano Island",
+          "terrain_type": "maar_crater_island",
+          "slope_deg": 10.6629,
+          "slope_difference_deg": 1.9348458953857417,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.0865,
+      "worst_site_slope_difference_deg": 1.9348458953857417,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 8
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-06",
+          "site_name": "Pinacate Volcanic Field",
+          "terrain_type": "volcanic_field_maar_craters",
+          "slope_deg": 12.8359,
+          "slope_difference_deg": 0.23815410461425834,
+          "region": null
+        },
+        {
+          "site_id": "PL-11",
+          "site_name": "Expedition Fiord, Axel Heiberg Island",
+          "terrain_type": "polar_gypsum_cold_springs",
+          "slope_deg": 10.5743,
+          "slope_difference_deg": 2.023445895385743,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.1308000000000007,
+      "worst_site_slope_difference_deg": 2.023445895385743,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 9
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-01",
+          "site_name": "Pamir Plateau (Murghab)",
+          "terrain_type": "high_altitude_cold_desert",
+          "slope_deg": 11.7777,
+          "slope_difference_deg": 0.8200458953857428,
+          "region": null
+        },
+        {
+          "site_id": "GL-25",
+          "site_name": "Mount Etna Summit",
+          "terrain_type": "basaltic_stratovolcano",
+          "slope_deg": 14.1804,
+          "slope_difference_deg": 1.5826541046142584,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.2013500000000006,
+      "worst_site_slope_difference_deg": 1.5826541046142584,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 10
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-01",
+          "site_name": "Pamir Plateau (Murghab)",
+          "terrain_type": "high_altitude_cold_desert",
+          "slope_deg": 11.7777,
+          "slope_difference_deg": 0.8200458953857428,
+          "region": null
+        },
+        {
+          "site_id": "PL-01",
+          "site_name": "Bockfjorden Volcanic Complex (Sverrefjellet)",
+          "terrain_type": "polar_basaltic_volcano",
+          "slope_deg": 14.221,
+          "slope_difference_deg": 1.623254104614258,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.2216500000000003,
+      "worst_site_slope_difference_deg": 1.623254104614258,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 11
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-06",
+          "site_name": "Pinacate Volcanic Field",
+          "terrain_type": "volcanic_field_maar_craters",
+          "slope_deg": 12.8359,
+          "slope_difference_deg": 0.23815410461425834,
+          "region": null
+        },
+        {
+          "site_id": "GL-09",
+          "site_name": "Trou au Natron, Tibesti",
+          "terrain_type": "volcanic_caldera_desert",
+          "slope_deg": 10.377,
+          "slope_difference_deg": 2.2207458953857415,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.22945,
+      "worst_site_slope_difference_deg": 2.2207458953857415,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 12
+    },
+    {
+      "sites": [
+        {
+          "site_id": "SEA-11",
+          "site_name": "Mount Sinabung",
+          "terrain_type": "stratovolcano_lava_dome",
+          "slope_deg": 13.1447,
+          "slope_difference_deg": 0.5469541046142581,
+          "region": null
+        },
+        {
+          "site_id": "SEA-15",
+          "site_name": "Taal Volcano Island",
+          "terrain_type": "maar_crater_island",
+          "slope_deg": 10.6629,
+          "slope_difference_deg": 1.9348458953857417,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.2409,
+      "worst_site_slope_difference_deg": 1.9348458953857417,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 13
+    },
+    {
+      "sites": [
+        {
+          "site_id": "PL-11",
+          "site_name": "Expedition Fiord, Axel Heiberg Island",
+          "terrain_type": "polar_gypsum_cold_springs",
+          "slope_deg": 10.5743,
+          "slope_difference_deg": 2.023445895385743,
+          "region": null
+        },
+        {
+          "site_id": "SEA-11",
+          "site_name": "Mount Sinabung",
+          "terrain_type": "stratovolcano_lava_dome",
+          "slope_deg": 13.1447,
+          "slope_difference_deg": 0.5469541046142581,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.2852000000000006,
+      "worst_site_slope_difference_deg": 2.023445895385743,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 14
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-06",
+          "site_name": "Pinacate Volcanic Field",
+          "terrain_type": "volcanic_field_maar_craters",
+          "slope_deg": 12.8359,
+          "slope_difference_deg": 0.23815410461425834,
+          "region": null
+        },
+        {
+          "site_id": "SEA-09",
+          "site_name": "Mount Semeru Pyroclastic Flows",
+          "terrain_type": "pyroclastic_flow_plain",
+          "slope_deg": 15.0015,
+          "slope_difference_deg": 2.403754104614258,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.320954104614258,
+      "worst_site_slope_difference_deg": 2.403754104614258,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 15
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-01",
+          "site_name": "Pamir Plateau (Murghab)",
+          "terrain_type": "high_altitude_cold_desert",
+          "slope_deg": 11.7777,
+          "slope_difference_deg": 0.8200458953857428,
+          "region": null
+        },
+        {
+          "site_id": "SEA-15",
+          "site_name": "Taal Volcano Island",
+          "terrain_type": "maar_crater_island",
+          "slope_deg": 10.6629,
+          "slope_difference_deg": 1.9348458953857417,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.3774458953857422,
+      "worst_site_slope_difference_deg": 1.9348458953857417,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 16
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-09",
+          "site_name": "Trou au Natron, Tibesti",
+          "terrain_type": "volcanic_caldera_desert",
+          "slope_deg": 10.377,
+          "slope_difference_deg": 2.2207458953857415,
+          "region": null
+        },
+        {
+          "site_id": "SEA-11",
+          "site_name": "Mount Sinabung",
+          "terrain_type": "stratovolcano_lava_dome",
+          "slope_deg": 13.1447,
+          "slope_difference_deg": 0.5469541046142581,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.3838499999999998,
+      "worst_site_slope_difference_deg": 2.2207458953857415,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 17
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-06",
+          "site_name": "Pinacate Volcanic Field",
+          "terrain_type": "volcanic_field_maar_craters",
+          "slope_deg": 12.8359,
+          "slope_difference_deg": 0.23815410461425834,
+          "region": null
+        },
+        {
+          "site_id": "SEA-13",
+          "site_name": "Kelud Crater",
+          "terrain_type": "crater_lake_volcano",
+          "slope_deg": 15.1783,
+          "slope_difference_deg": 2.580554104614258,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.4093541046142581,
+      "worst_site_slope_difference_deg": 2.580554104614258,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 18
+    },
+    {
+      "sites": [
+        {
+          "site_id": "GL-01",
+          "site_name": "Pamir Plateau (Murghab)",
+          "terrain_type": "high_altitude_cold_desert",
+          "slope_deg": 11.7777,
+          "slope_difference_deg": 0.8200458953857428,
+          "region": null
+        },
+        {
+          "site_id": "PL-11",
+          "site_name": "Expedition Fiord, Axel Heiberg Island",
+          "terrain_type": "polar_gypsum_cold_springs",
+          "slope_deg": 10.5743,
+          "slope_difference_deg": 2.023445895385743,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.421745895385743,
+      "worst_site_slope_difference_deg": 2.023445895385743,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 19
+    },
+    {
+      "sites": [
+        {
+          "site_id": "SEA-09",
+          "site_name": "Mount Semeru Pyroclastic Flows",
+          "terrain_type": "pyroclastic_flow_plain",
+          "slope_deg": 15.0015,
+          "slope_difference_deg": 2.403754104614258,
+          "region": null
+        },
+        {
+          "site_id": "SEA-11",
+          "site_name": "Mount Sinabung",
+          "terrain_type": "stratovolcano_lava_dome",
+          "slope_deg": 13.1447,
+          "slope_difference_deg": 0.5469541046142581,
+          "region": null
+        }
+      ],
+      "terrain_categories_differ": true,
+      "mean_slope_difference_deg": 1.475354104614258,
+      "worst_site_slope_difference_deg": 2.403754104614258,
+      "failure_mode_complementarity": "not_established",
+      "validated_risk_coverage_percent": null,
+      "rank": 20
+    }
+  ]
+}

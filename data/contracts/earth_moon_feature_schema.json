@@ -1,0 +1,251 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "earth-moon-feature-schema-v0.1",
+  "title": "Planetary Analog Feature Record",
+  "description": "Shared input contract for Earth, Moon, and Mars analog matching.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "site_id",
+    "site_name",
+    "planet",
+    "location",
+    "features",
+    "feature_metadata",
+    "quality",
+    "provenance"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "site_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "site_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "planet": {
+      "enum": [
+        "Earth",
+        "Moon",
+        "Mars"
+      ]
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "latitude_deg",
+        "longitude_deg"
+      ],
+      "properties": {
+        "latitude_deg": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude_deg": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": -180,
+          "maximum": 180
+        },
+        "elevation_m": {
+          "type": [
+            "number",
+            "null"
+          ]
+        }
+      }
+    },
+    "features": {
+      "type": "object",
+      "description": "Store physical measurements in their original units. Unknown values are null.",
+      "additionalProperties": {
+        "type": [
+          "number",
+          "string",
+          "boolean",
+          "null"
+        ]
+      },
+      "properties": {
+        "terrain_type": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "slope_deg": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 90
+        },
+        "roughness_rms_m": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "roughness_normalized": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "albedo": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "mean_daily_temp_range_k": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "precip_mm_day": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "aridity_index": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        }
+      }
+    },
+    "feature_metadata": {
+      "type": "object",
+      "description": "Metadata keyed by the corresponding feature name.",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "method": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sampling_scale_m": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "exclusiveMinimum": 0
+          },
+          "spatial_resolution_m": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "exclusiveMinimum": 0
+          },
+          "comparability_status": {
+            "enum": [
+              "comparable",
+              "approximate",
+              "unavailable",
+              "requires_review"
+            ]
+          },
+          "uncertainty": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          }
+        },
+        "required": [
+          "comparability_status"
+        ]
+      }
+    },
+    "quality": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "missing_features",
+        "uncertainty_available"
+      ],
+      "properties": {
+        "missing_features": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string"
+          }
+        },
+        "uncertainty_available": {
+          "type": "boolean"
+        },
+        "quality_notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "dataset_version",
+        "source_references"
+      ],
+      "properties": {
+        "dataset_version": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "source_references": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

@@ -84,8 +84,8 @@
     "measurement_date": null,
     "spatial_resolution_m": 5,
     "value_type": "measured_and_derived",
-    "source_url": null,
-    "notes": "Source URL and measurement date have not yet been independently documented."
+    "source_url": "https://pgda.gsfc.nasa.gov/data/LOLA_5mpp/",
+    "notes": "Source URL points to the official NASA LOLA 5 m/pixel product page. Exact measurement date and individual product acquisition metadata have not been independently verified. Roughness is calculated as local elevation standard deviation over a 3x3 pixel window at 5 m/pixel resolution."
   },
   "source_metadata": {
     "elevation": {

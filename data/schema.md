@@ -44,7 +44,7 @@ Each planetary target must contain:
 | slope_deg | degrees | Surface inclination |
 | roughness_rms | meters | RMS elevation deviation |
 | albedo | dimensionless | Surface reflectivity |
-| diurnal_temp_swing_k | Kelvin | Day/night temperature variation |
+| mean_daily_temp_range_k | Kelvin | Day-weighted climatological mean of monthly average daily maximum-minus-minimum temperature ranges (12 months) |
 | aridity_index | dimensionless | Terrestrial aridity indicator |
 
 Important:
