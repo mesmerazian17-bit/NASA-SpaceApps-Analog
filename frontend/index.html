@@ -1,0 +1,456 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Orbitra — Planetary Analog Explorer</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#05060f;--tx:#EEF0FF;--mu:#8D93B8;--ac:#8B7CFF;--te:#5EEAD4;--au:#E7B85C;--cy:#52D6E8;--or:#F2A65A;--gl:rgba(16,19,42,.72);--ln:rgba(255,255,255,.09);color-scheme:dark;box-sizing:border-box}
+*{box-sizing:inherit}html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--tx);font:13px/1.5 Sora,system-ui,sans-serif}
+.m{font-family:'IBM Plex Mono',ui-monospace,monospace}canvas{position:fixed;inset:0;width:100%;height:100%;display:block;touch-action:none;cursor:grab}
+button,select,input{font:inherit;color:inherit}
+.gl{background:var(--gl);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--ln);border-radius:18px}
+#hero{position:fixed;inset:0;z-index:10;display:flex;flex-direction:column;justify-content:center;padding:0 7vw;pointer-events:none;transition:opacity .9s,transform .9s}
+#hero.out{opacity:0;transform:translateY(-20px)}#hero>*{pointer-events:auto;max-width:520px}
+.eb{font-size:11px;letter-spacing:.35em;color:var(--te);margin-bottom:14px}
+#hero h1{font-size:clamp(44px,8vw,96px);line-height:.95;margin:0 0 18px;font-weight:300;letter-spacing:-.03em}
+#hero h1 b{font-weight:700;background:linear-gradient(100deg,#8B7CFF,#5EEAD4);-webkit-background-clip:text;background-clip:text;color:transparent}
+#hero p{color:var(--mu);margin:0 0 26px;font-size:15px}
+.go{align-self:flex-start;background:linear-gradient(100deg,#8B7CFF,#5EEAD4);color:#05060f;border:0;border-radius:99px;padding:14px 28px;font-weight:600;cursor:pointer;box-shadow:0 8px 40px #8b7cff55;transition:transform .2s}.go:hover{transform:translateY(-2px)}
+.fine{font-size:11px;color:var(--mu);margin-top:22px}
+#ui{opacity:0;pointer-events:none;transition:opacity .8s .3s}#ui.on{opacity:1;pointer-events:auto}#ui>*{pointer-events:auto}
+#top{position:fixed;top:14px;left:14px;right:14px;display:flex;align-items:center;gap:10px;z-index:5;pointer-events:none!important}#top>*{pointer-events:auto}
+.logo{font-weight:700;letter-spacing:.18em;padding:9px 16px}.logo i{font-style:normal;color:var(--ac)}
+.pill{padding:8px 14px;border-radius:99px;cursor:pointer;border:1px solid var(--ln);background:var(--gl);backdrop-filter:blur(16px)}
+#fl{position:fixed;top:68px;left:14px;width:290px;max-height:calc(100% - 210px);overflow:auto;padding:16px;z-index:5;transition:transform .35s,opacity .35s}#fl.h{transform:translateX(-120%);opacity:0}
+h4{margin:14px 0 7px;font-size:10px;letter-spacing:.18em;color:var(--mu);font-weight:600}h4:first-child{margin-top:0}
+select,input[type=text]{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--ln);border-radius:10px;padding:8px 10px}option{background:#10132a}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip{border:1px solid var(--ln);background:transparent;border-radius:99px;padding:5px 10px;font-size:11.5px;cursor:pointer;color:var(--mu)}.chip.on{background:#8b7cff33;border-color:var(--ac);color:var(--tx)}
+.sw{display:flex;align-items:center;justify-content:space-between;margin:6px 0}.sw input{accent-color:var(--ac);width:16px;height:16px}input[type=range]{width:100%;accent-color:var(--ac)}
+.nt{font-size:11px;color:var(--mu)}
+#bar{position:fixed;left:0;right:0;bottom:0;padding:0 14px 14px;z-index:5;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x proximity;transition:transform .4s}
+.cd{flex:none;width:210px;padding:11px 13px;border-radius:14px;cursor:pointer;scroll-snap-align:start;background:var(--gl);backdrop-filter:blur(16px);border:1px solid var(--ln);transition:transform .2s,border-color .2s}.cd:hover{transform:translateY(-3px)}.cd.s{border-color:var(--au);box-shadow:0 0 0 1px var(--au)}
+.cd b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.cd small{color:var(--mu)}
+.empty{padding:16px;color:var(--mu)}
+#sh{position:fixed;top:68px;right:14px;bottom:136px;width:390px;overflow:auto;padding:20px;z-index:6;transform:translateX(120%);transition:transform .45s cubic-bezier(.2,.8,.2,1)}#sh.on{transform:none}
+#sh h2{margin:2px 0 2px;font-size:22px;font-weight:600;line-height:1.2}.x{position:absolute;top:12px;right:14px;background:none;border:0;font-size:20px;cursor:pointer;color:var(--mu)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}.tl{background:rgba(255,255,255,.05);border-radius:12px;padding:9px 11px}.tl span{display:block;font-size:10px;color:var(--mu);letter-spacing:.1em}.tl b{font-size:15px;font-weight:500}
+.sec{margin-top:18px}.warn{border:1px solid #f2a65a66;background:#f2a65a14;border-radius:14px;padding:12px}.warn h5{margin:0 0 6px;color:var(--or);font-size:11px;letter-spacing:.14em}
+table{width:100%;border-collapse:collapse;font-size:12px}td,th{padding:4px 3px;border-bottom:1px solid var(--ln);text-align:left;vertical-align:top}th{color:var(--mu);font-weight:400}
+.tag{font-size:9.5px;padding:2px 7px;border-radius:99px;margin-right:5px;font-weight:600}.d{background:#5eead425;color:var(--te)}.g{background:#e7b85c25;color:var(--au)}
+ul{margin:4px 0 10px;padding-left:17px}li{margin:3px 0}.ph{border:1px dashed var(--mu);border-radius:12px;padding:12px;color:var(--mu);font-size:11.5px}
+.lg{position:fixed;right:14px;bottom:136px;z-index:4;font-size:11px;padding:8px 12px;color:var(--mu);transition:right .45s}.lg.sh{right:420px}.lg i{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 4px 0 8px}
+@media(max-width:900px){#sh{left:10px;right:10px;width:auto;top:64px;bottom:14px;height:auto;transform:translateY(110%)}#sh.on{transform:none}#fl{left:10px;right:10px;width:auto;top:64px;bottom:14px;max-height:none}.lg{display:none}#hero{justify-content:flex-end;padding-bottom:12vh}body.mob-open #bar{transform:translateY(120%);pointer-events:none}table{display:block;overflow-x:auto;white-space:nowrap}}
+/* --- API integration additions --- */
+.go:disabled{opacity:.45;cursor:wait;transform:none}
+.na{color:var(--mu);font-style:italic;font-family:Sora,system-ui,sans-serif}
+.tag.q{background:#5eead425;color:var(--te)}.tag.c{background:#e7b85c25;color:var(--au)}.tag.u{background:#8d93b825;color:var(--mu)}.tag.w{background:#f2a65a25;color:var(--or)}
+.ev{border:1px solid var(--ln);border-radius:12px;padding:9px 11px;margin:6px 0;font-size:12px}.ev.q{border-color:#5eead455}.ev.c{border-color:#e7b85c55}.ev.u{border-style:dashed}
+.ev b{font-weight:600}.ev .nt{margin-top:3px}
+.grp{margin:10px 0 4px;font-size:10px;letter-spacing:.14em;color:var(--mu);font-weight:600}
+.pf{display:grid;grid-template-columns:minmax(92px,128px) 1fr minmax(70px,96px);gap:8px;align-items:center;font-size:11.5px;margin:7px 0}
+.pf .v{text-align:right}.trk{position:relative;height:6px;border-radius:99px;background:rgba(255,255,255,.08)}
+.trk i{position:absolute;top:50%;width:10px;height:10px;margin:-5px 0 0 -5px;border-radius:50%;box-shadow:0 0 0 2px #05060f}
+.notice{border:1px solid #8b7cff66;background:#8b7cff14;border-radius:14px;padding:11px 12px;margin:10px 0;font-size:12px}
+.notice b{color:var(--tx)}
+.btn{border:1px solid var(--ln);background:rgba(255,255,255,.05);border-radius:99px;padding:5px 12px;cursor:pointer;font-size:11.5px}.btn:hover{border-color:var(--ac)}
+#pn{position:fixed;top:68px;left:50%;transform:translateX(-50%);width:min(780px,calc(100% - 28px));max-height:calc(100% - 210px);overflow:auto;padding:20px;z-index:8}
+#pn h2{margin:0 0 4px;font-size:20px;font-weight:600;line-height:1.25}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin:0 34px 16px 0}
+.scroll{overflow-x:auto}.scroll table{min-width:480px}
+tr.clk{cursor:pointer}tr.clk:hover td{background:rgba(255,255,255,.05)}tr.cur td{background:#e7b85c1a}
+.camp{border:1px solid var(--ln);border-radius:14px;padding:11px 12px;margin:8px 0}
+.camp .pr{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}.camp .pr>div{background:rgba(255,255,255,.04);border-radius:10px;padding:7px 9px;font-size:11.5px}
+details{margin:6px 0}summary{cursor:pointer;color:var(--mu);font-size:11.5px}
+.md{border-bottom:1px solid var(--ln);padding:6px 0;font-size:11.5px}.md:last-child{border:0}
+#ovl{position:fixed;z-index:60;left:50%;top:50%;transform:translate(-50%,-50%);width:min(580px,calc(100% - 32px));max-height:calc(100% - 32px);overflow:auto;padding:22px}
+#ovl.err{border-color:#e66a6a99}#ovl h3{margin:0 0 8px;font-size:17px}#ovl.err h3{color:#E66A6A}
+#ovl pre{white-space:pre-wrap;word-break:break-word;background:rgba(255,255,255,.05);border-radius:10px;padding:10px;font-size:11.5px;margin:10px 0}
+#intg{margin-bottom:10px}
+@media(max-width:560px){.pill{white-space:nowrap;padding:8px 10px}.lng{display:none}#top{gap:5px;left:10px;right:10px}.logo{padding:9px 11px;letter-spacing:.12em}}
+@media(max-width:900px){#pn{top:64px;bottom:14px;max-height:none;padding:16px}.camp .pr{grid-template-columns:1fr}.pf{grid-template-columns:96px 1fr 74px}}
+</style></head><body>
+<canvas id="g"></canvas>
+<section id="hero"><div class="eb m" id="heb">EARTH ANALOG SITES · MOON &amp; MARS TARGETS</div><h1>Walk on <b>Earth</b>,<br>rehearse for <b>worlds</b> beyond.</h1><p>Orbitra is an independent explorer for terrestrial analog sites that may help prepare future lunar and Martian missions. Spin the globe, inspect measured terrain and climate fields, and compare sites — with every comparison limitation stated.</p><button class="go" id="enter" disabled>Begin exploring →</button><div class="fine m" id="hst" role="status" aria-live="polite">Connecting to the Orbitra backend…</div><div class="fine">Independent scientific project — not an official NASA product, no endorsement implied.</div></section>
+<div id="ovl" class="gl" hidden role="alertdialog" aria-live="assertive"></div>
+<div id="ui"><div id="top"><div class="gl logo">ORBI<i>T</i>RA</div><button class="pill" id="ftog">☰ Controls</button><button class="pill" id="ptog">▤ <span class="lng">Reference </span>Data</button><span class="pill m" id="cnt" style="cursor:default"></span></div>
+<aside id="fl" class="gl"><div id="intg" hidden></div><h4>TARGET WORLD</h4><select id="planet" disabled><option>Loading targets…</option></select><div class="nt" id="tinfo" style="margin-top:6px"></div>
+<h4>FAILURE-MODE EVIDENCE FOCUS</h4><div class="chips" id="fm"></div><div class="nt" style="margin-top:5px">Modes come from the selected target definition. Selecting one only focuses the evidence shown for a site — it does not establish that any site is suitable.</div>
+<h4>MANUAL TWO-SITE COMPARISON</h4><label class="sw">Compare two sites<input type="checkbox" id="comp"></label><div id="cb" hidden><select id="partner"></select><div class="nt" style="margin-top:5px">You choose the partner here. Backend-generated pairs are under Reference data → Campaigns.</div></div>
+<h4>FILTERS</h4><div class="sw"><span>Earth mean slope</span><span class="m" id="rv"></span></div><label class="nt" for="smin">Minimum</label><input type="range" id="smin" min="0" max="1" step="0.5" value="0"><label class="nt" for="smax">Maximum</label><input type="range" id="smax" min="0" max="1" step="0.5" value="1"><div class="nt" style="margin-top:5px">Slope is derived from a ~1 km elevation stencil. Road-distance and protected-area filters were removed: those estimates are not validated measurements in the Earth contract.</div>
+<h4>ORDER</h4><select id="sort"><option value="id">Site ID</option><option value="rank">Lunar slope similarity rank (exploratory)</option></select>
+<h4>SEARCH</h4><input type="text" id="q" placeholder="Name, site ID, terrain type…" aria-label="Search sites"></aside>
+<aside id="pn" class="gl" hidden aria-label="Reference data"></aside>
+<aside id="sh" class="gl"></aside><div class="lg gl" id="lg"><i style="background:#E7B85C"></i>Primary<i style="background:#52D6E8"></i>Partner<i style="background:#fff9"></i>Candidate<div class="nt">Graticule only: no coastline data offline</div></div>
+<div id="bar"></div></div>
+<script>
+// ===== Orbitra frontend — data layer =====
+// All scientific data comes from the FastAPI backend (/api/*). Nothing here holds dataset values.
+const $=s=>document.querySelector(s);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const num=v=>typeof v==='number'&&Number.isFinite(v)?v:null;
+const NA='Not available',NAH='<span class="na">Not available</span>';
+// Format a number for HTML; missing values render as "Not available", never 0.
+const fv=(v,d=1,u='')=>num(v)==null?NAH:esc(v.toFixed(d)+u);
+const ft=(v,d=1,u='')=>num(v)==null?NA:v.toFixed(d)+u; // plain-text variant (canvas, <option>)
+const human=k=>k==null?NA:String(k).replace(/_/g,' ').replace(/^./,c=>c.toUpperCase());
+const safeUrl=u=>/^https?:\/\//i.test(String(u||''))?String(u):null;
+const link=u=>{const s=safeUrl(u);return s?`<a href="${esc(s)}" target="_blank" rel="noopener noreferrer" style="color:var(--te)">${esc(s)}</a>`:esc(u)};
+const ul=a=>a&&a.length?'<ul>'+a.map(x=>`<li>${esc(x)}</li>`).join('')+'</ul>':'<div class="nt">None listed.</div>';
+const STATUS={quantitative_proxy:{l:'Quantitative proxy',c:'q'},contextual_only:{l:'Contextual only',c:'c'},unavailable:{l:'Unavailable',c:'u'}};
+const stTag=k=>{const s=STATUS[k];return s?`<span class="tag ${s.c}">${s.l.toUpperCase()}</span>`:`<span class="tag w">${esc(String(k).toUpperCase())}</span>`};
+const compTag=st=>st?`<span class="tag ${st==='approximate'?'c':st==='unavailable'?'u':'w'}" title="Earth–lunar comparability status from feature_metadata">${esc(human(st)).toUpperCase()}</span>`:'';
+// General planetary background text (not dataset values). Keyed by the target's `planet` field.
+const ENV={Moon:'No meaningful atmosphere (trace exosphere)',Mars:'Thin CO₂ atmosphere, well under 1% of Earth sea-level pressure'};
+const G0=9.80665;
+
+const ENDPOINTS={sites:'/api/sites',map:'/api/map',lunar:'/api/lunar-reference',rankings:'/api/rankings',campaigns:'/api/campaigns',evidence:'/api/failure-evidence',targets:'/api/targets'};
+const D={}; // raw API payloads, populated once by loadAll()
+let S={sites:[],all:[],byId:new Map(),sel:null,partner:null,fm:new Set(),comp:false,pairFrom:null,q:'',smin:0,smax:0,slopeLo:0,slopeHi:0,sort:'id',target:null,tab:'lunar',ready:false,integrity:[],sorted:{}};
+
+async function getJSON(path){
+  const ac=new AbortController(),tm=setTimeout(()=>ac.abort(),15000);
+  try{
+    const r=await fetch(path,{signal:ac.signal,headers:{Accept:'application/json'},cache:'no-store'});
+    if(!r.ok)throw new Error('HTTP '+r.status+' '+r.statusText);
+    try{return await r.json()}catch(e){throw new Error('response is not valid JSON')}
+  }catch(e){throw new Error(path+' — '+(e.name==='AbortError'?'timed out after 15 s':e.message))}
+  finally{clearTimeout(tm)}
+}
+function validate(d){
+  const bad=[],chk=(ok,m)=>{if(!ok)bad.push(m)};
+  chk(Array.isArray(d.sites)&&d.sites.length>0,'/api/sites: expected a non-empty array of site records');
+  chk(d.map&&Array.isArray(d.map.features),'/api/map: expected a GeoJSON FeatureCollection');
+  chk(d.lunar&&d.lunar.features&&typeof d.lunar.features==='object','/api/lunar-reference: missing "features"');
+  chk(d.rankings&&Array.isArray(d.rankings.rankings),'/api/rankings: missing "rankings" array');
+  chk(d.campaigns&&Array.isArray(d.campaigns.campaign_candidates),'/api/campaigns: missing "campaign_candidates" array');
+  chk(d.evidence&&Array.isArray(d.evidence.sites),'/api/failure-evidence: missing "sites" array');
+  chk(d.targets&&Array.isArray(d.targets.targets)&&d.targets.targets.length>0,'/api/targets: missing "targets" array');
+  if(bad.length)throw new Error('Unexpected response shape:\n'+bad.join('\n'));
+}
+let loading=null;
+function loadAll(){
+  if(S.ready)return Promise.resolve();
+  if(loading)return loading; // never run two loads concurrently
+  setStatus('loading');
+  loading=Promise.allSettled(Object.entries(ENDPOINTS).map(([k,p])=>getJSON(p).then(v=>[k,v])))
+    .then(rs=>{
+      const errs=rs.filter(r=>r.status==='rejected').map(r=>r.reason.message);
+      if(errs.length)throw new Error(errs.join('\n'));
+      const out=Object.fromEntries(rs.map(r=>r.value));validate(out);return out;
+    })
+    .then(out=>{Object.assign(D,out);boot();setStatus('ok')})
+    .catch(e=>{console.error('[Orbitra] backend data could not be loaded:',e);setStatus('error',e.message)})
+    .finally(()=>{loading=null});
+  return loading;
+}
+
+// Explicit contract → frontend mapping. Unknown/missing values become null (never 0).
+function adaptSite(r){
+  const L=r.location||{},F=r.features||{};
+  return{
+    site_id:String(r.site_id),
+    name:r.site_name??r.site_id,                      // site_name
+    planet:r.planet??null,
+    lat:num(L.latitude_deg),                           // location.latitude_deg
+    lon:num(L.longitude_deg),                          // location.longitude_deg
+    elevation_m:num(L.elevation_m),                    // location.elevation_m
+    terrain_type:typeof F.terrain_type==='string'?F.terrain_type:null,
+    slope_deg:num(F.slope_deg),                        // ~1 km five-point stencil
+    roughness_rms_m:num(F.roughness_rms_m),            // plane-fit residual, metres
+    roughness_rms:num(F.roughness_normalized),         // dataset-normalized, dimensionless
+    albedo:num(F.albedo),
+    mean_daily_temp_range_k:num(F.mean_daily_temp_range_k),
+    precip_mm_day:num(F.precip_mm_day),
+    precipitation_dryness_proxy:num(F.precipitation_dryness_proxy), // precipitation-only; NOT UNEP P/PET aridity
+    meta:r.feature_metadata||{},quality:r.quality||{},provenance:r.provenance||{},
+    rank:null,evidence:null
+  };
+}
+// Profile/details fields: [key, label, decimals, unit, metadata key]
+const FIELDS=[
+  ['elevation_m','Elevation',0,' m',null],
+  ['slope_deg','Mean slope',2,'°','slope_deg'],
+  ['roughness_rms_m','Roughness RMS',2,' m','roughness_rms_m'],
+  ['roughness_rms','Roughness (normalized)',3,'','roughness_normalized'],
+  ['albedo','Albedo',2,'','albedo'],
+  ['mean_daily_temp_range_k','Mean daily temp. range',1,' K','mean_daily_temp_range_k'],
+  ['precip_mm_day','Precipitation',2,' mm/day','precip_mm_day'],
+  ['precipitation_dryness_proxy','Precip.-only dryness proxy',3,'','precipitation_dryness_proxy']
+];
+
+function boot(){
+  if(S.ready)return;
+  const all=D.sites.map(adaptSite),byId=new Map(all.map(s=>[s.site_id,s])),warn=[];
+  if(byId.size!==all.length)warn.push('Duplicate site_id values in /api/sites.');
+  // Cross-check globe coordinates: /api/map geometry must match /api/sites location.
+  const seen=new Set();
+  for(const f of D.map.features){
+    const id=f&&f.properties&&f.properties.site_id,s=byId.get(id),c=f&&f.geometry&&f.geometry.coordinates;
+    if(!s){warn.push(`/api/map feature ${id} has no matching /api/sites record.`);continue}
+    seen.add(id);
+    if(!Array.isArray(c)||c[0]!==s.lon||c[1]!==s.lat)warn.push(`${id}: /api/map coordinates differ from /api/sites location.`);
+  }
+  for(const s of all){if(!seen.has(s.site_id))warn.push(`${s.site_id}: missing from /api/map.`);if(s.lat==null||s.lon==null)warn.push(`${s.site_id}: coordinates not available; not plotted.`)}
+  for(const r of D.rankings.rankings){const s=byId.get(r.site_id);if(s)s.rank=r;else warn.push(`Ranking row ${r.site_id} has no matching site.`)}
+  for(const e of D.evidence.sites){const s=byId.get(e.site_id);if(s)s.evidence=e.failure_mode_evidence||{};else warn.push(`Evidence row ${e.site_id} has no matching site.`)}
+  for(const c of D.campaigns.campaign_candidates)for(const x of c.sites||[])if(!byId.has(x.site_id))warn.push(`Campaign #${c.rank} references unknown site ${x.site_id}.`);
+  if(warn.length)console.warn('[Orbitra] data integrity warnings:',warn);
+  S.all=all;S.byId=byId;S.integrity=warn;
+  for(const[k]of FIELDS)S.sorted[k]=all.map(s=>s[k]).filter(v=>v!=null).sort((a,b)=>a-b);
+  const sl=S.sorted.slope_deg;S.slopeLo=sl.length?Math.floor(sl[0]):0;S.slopeHi=sl.length?Math.ceil(sl[sl.length-1]):0;
+  S.smin=S.slopeLo;S.smax=S.slopeHi;
+  for(const[id,v]of[['#smin',S.slopeLo],['#smax',S.slopeHi]]){const e=$(id);e.min=S.slopeLo;e.max=S.slopeHi;e.value=v}
+  const T=D.targets.targets;
+  $('#planet').innerHTML=T.map(t=>`<option value="${esc(t.target_id)}">${esc(t.name)} · ${esc(t.planet)}</option>`).join('');
+  $('#planet').disabled=false;
+  S.target=T.find(t=>t.target_id===D.rankings.target_id)||T[0];$('#planet').value=S.target.target_id;
+  $('#heb').textContent=`${all.length} EARTH SITES · ${T.length} PLANETARY TARGETS`;
+  if(warn.length){$('#intg').hidden=false;$('#intg').innerHTML=`<div class="warn"><h5>⚠ DATA INTEGRITY</h5><div class="nt">${warn.length} consistency warning(s) between API endpoints. See browser console.</div>${ul(warn.slice(0,6))}</div>`}
+  S.ready=true;
+  targetChanged();apply();
+}
+function setStatus(st,msg){
+  const h=$('#hst'),o=$('#ovl'),b=$('#enter');
+  if(st==='loading'){h.textContent='Loading data from the Orbitra backend…';b.disabled=true;o.hidden=true}
+  else if(st==='ok'){h.textContent=`Backend connected · ${S.all.length} Earth sites loaded from /api/sites`;b.disabled=false;o.hidden=true}
+  else{
+    h.textContent='Backend data could not be loaded.';b.disabled=true;o.className='gl err';o.hidden=false;
+    o.innerHTML=`<h3>Backend data could not be loaded</h3><div class="nt">Orbitra displays only data served by its FastAPI backend and has no embedded fallback dataset, so nothing is shown until every endpoint responds.</div><pre class="m">${esc(msg)}</pre><div class="nt">Start the backend from the project root with <span class="m">uvicorn api.app:app --port 8000</span>, then open <span class="m">http://127.0.0.1:8000/</span> (the page must be served by the API, not opened as a file).</div><div style="margin-top:12px"><button class="btn" data-act="retry">↻ Retry</button></div>`;
+  }
+}
+const pct=(k,v)=>{const a=S.sorted[k];if(v==null||!a||!a.length)return null;let lt=0,eq=0;for(const x of a){if(x<v)lt++;else if(x===v)eq++}return(lt+eq/2)/a.length*100};
+const isAuditTarget=t=>!!t&&t.name===D.evidence.target;
+const isRankTarget=t=>!!t&&t.target_id===D.rankings.target_id;
+const marsInfo=t=>(D.evidence.mars_targets||[]).find(m=>m.target_id===t.target_id);
+
+// ===== Globe renderer (preserved from original) =====
+const cv=$('#g'),cx=cv.getContext('2d'),rd=Math.PI/180,G={lon:100,lat:-12,z:.95,ox:0,fly:null,hero:true},ST=[];let W,H,PJ=[];
+for(let i=0;i<220;i++)ST.push([Math.random(),Math.random(),Math.random()*1.3+.2,Math.random()]);
+function size(){const d=devicePixelRatio||1;W=innerWidth;H=innerHeight;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0)}
+const Rg=()=>Math.min(W,H)*.36*G.z,CX=()=>W/2+G.ox,CY=()=>H/2-(W<900?H*.08:0);
+function pr(lon,lat){const l=(lon-G.lon)*rd,p=lat*rd,p0=G.lat*rd,r=Rg(),cs=Math.sin(p0)*Math.sin(p)+Math.cos(p0)*Math.cos(p)*Math.cos(l);return{x:CX()+r*Math.cos(p)*Math.sin(l),y:CY()-r*(Math.cos(p0)*Math.sin(p)-Math.sin(p0)*Math.cos(p)*Math.cos(l)),v:cs>0}}
+function line(pts,st,w){cx.strokeStyle=st;cx.lineWidth=w;cx.beginPath();let on=false;for(const[a,b]of pts){const q=pr(a,b);if(q.v){on?cx.lineTo(q.x,q.y):cx.moveTo(q.x,q.y);on=true}else on=false}cx.stroke()}
+const colr=s=>s===S.sel?'#E7B85C':(S.comp&&s===S.partner)?'#52D6E8':'rgba(255,255,255,.62)';
+function frame(){requestAnimationFrame(frame);cx.clearRect(0,0,W,H);const t=performance.now()/1000;
+for(const[a,b,r,o]of ST){cx.fillStyle=`rgba(255,255,255,${.25+.5*Math.abs(Math.sin(t*.5+o*9))})`;cx.fillRect(a*W,b*H,r,r)}
+const wide=W>1100,tox=G.hero?(wide?W*.2:0):(wide?(S.sel?-195:0)+(!$('#fl').classList.contains('h')?70:0):0);G.ox+=(tox-G.ox)*.07;
+if(G.fly){const f=G.fly,dl=((f.lon-G.lon+540)%360)-180;G.lon+=dl*.075;G.lat+=(f.lat-G.lat)*.075;G.z+=(f.z-G.z)*.06;if(Math.abs(dl)<.05&&Math.abs(f.lat-G.lat)<.05)G.fly=null}
+else if(!drag&&(G.hero||!S.sel))G.lon+=.06;
+const x=CX(),y=CY(),r=Rg();let g=cx.createRadialGradient(x,y,r*.95,x,y,r*1.35);g.addColorStop(0,'rgba(139,124,255,.35)');g.addColorStop(1,'rgba(139,124,255,0)');cx.fillStyle=g;cx.beginPath();cx.arc(x,y,r*1.35,0,7);cx.fill();
+g=cx.createRadialGradient(x-r*.35,y-r*.4,r*.1,x,y,r);g.addColorStop(0,'#26305f');g.addColorStop(.6,'#11173a');g.addColorStop(1,'#080a1e');cx.fillStyle=g;cx.beginPath();cx.arc(x,y,r,0,7);cx.fill();cx.strokeStyle='rgba(94,234,212,.45)';cx.lineWidth=1.2;cx.stroke();
+for(let lo=-180;lo<180;lo+=30){const p=[];for(let la=-90;la<=90;la+=5)p.push([lo,la]);line(p,'rgba(160,170,255,.14)',1)}
+for(let la=-60;la<=60;la+=30){const p=[];for(let lo=-180;lo<=180;lo+=5)p.push([lo,la]);line(p,la?'rgba(160,170,255,.14)':'rgba(94,234,212,.3)',1)}
+if(S.comp&&S.sel&&S.partner){const a=vec(S.sel),b=vec(S.partner),d=Math.acos(Math.max(-1,Math.min(1,a[0]*b[0]+a[1]*b[1]+a[2]*b[2]))),p=[];for(let i=0;i<=60;i++){const k=i/60,s1=Math.sin((1-k)*d)/Math.sin(d||1),s2=Math.sin(k*d)/Math.sin(d||1),v=[0,1,2].map(j=>a[j]*s1+b[j]*s2);p.push([Math.atan2(v[1],v[0])/rd,Math.asin(v[2])/rd])}cx.setLineDash([5,5]);line(p,'rgba(82,214,232,.8)',1.5);cx.setLineDash([])}
+PJ=[];for(const s of S.sites){const q=pr(s.lon,s.lat);if(!q.v)continue;PJ.push({s,x:q.x,y:q.y});const hi=s===S.sel||(S.comp&&s===S.partner),rr=hi?6:3.4;
+if(hi){const k=(t*.8)%1;cx.strokeStyle=colr(s);cx.globalAlpha=1-k;cx.lineWidth=1.5;cx.beginPath();cx.arc(q.x,q.y,8+k*18,0,7);cx.stroke();cx.globalAlpha=1}
+cx.fillStyle=colr(s);cx.shadowColor=hi?colr(s):'transparent';cx.shadowBlur=hi?14:0;cx.beginPath();cx.arc(q.x,q.y,rr,0,7);cx.fill();cx.shadowBlur=0;
+if(hi){cx.font='500 11px "IBM Plex Mono",monospace';cx.fillStyle='#EEF0FF';cx.fillText(s.site_id+' · '+s.name,q.x+14,q.y+4)}}}
+const vec=s=>[Math.cos(s.lat*rd)*Math.cos(s.lon*rd),Math.cos(s.lat*rd)*Math.sin(s.lon*rd),Math.sin(s.lat*rd)];
+let drag=null;cv.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,m:0,x0:e.clientX,y0:e.clientY}});
+addEventListener('pointermove',e=>{if(!drag)return;const dx=e.clientX-drag.x,dy=e.clientY-drag.y;if(Math.abs(e.clientX-drag.x0)+Math.abs(e.clientY-drag.y0)>4)drag.m=1;if(!drag.m)return;G.fly=null;G.lon-=dx*.3/G.z;G.lat=Math.max(-85,Math.min(85,G.lat+dy*.3/G.z));drag.x=e.clientX;drag.y=e.clientY});
+addEventListener('pointerup',e=>{if(drag&&!drag.m&&!G.hero){let b=null,bd=16;for(const p of PJ){const d=Math.hypot(p.x-e.clientX,p.y-e.clientY);if(d<bd){bd=d;b=p.s}}if(b)select(b)}drag=null});
+cv.addEventListener('wheel',e=>{e.preventDefault();G.fly=null;G.z=Math.max(.7,Math.min(3.5,G.z*(e.deltaY<0?1.1:.91)))},{passive:false});
+// ===== UI layer =====
+function select(s,keepPair){if(!s)return;S.sel=s;if(S.partner===s)S.partner=null;if(!keepPair)S.pairFrom=null;if(s.lat!=null&&s.lon!=null)G.fly={lon:s.lon,lat:Math.max(-70,Math.min(70,s.lat)),z:Math.max(G.z,1.7)};ui()}
+function ui(){if(innerWidth<900&&S.sel){$('#fl').classList.add('h');$('#pn').hidden=true}document.body.classList.toggle('mob-open',innerWidth<900&&(!!S.sel||!$('#fl').classList.contains('h')||!$('#pn').hidden));bar();part();sheet();$('#sh').classList.toggle('on',!!S.sel);$('#lg').classList.toggle('sh',!!S.sel&&innerWidth>900)}
+function bar(){const B=$('#bar');
+  B.innerHTML=S.sites.length?S.sites.map(s=>{const c=colr(s),rk=S.sort==='rank'&&s.rank?` · #${esc(s.rank.rank)}`:'';
+    return `<div class="cd ${s===S.sel?'s':''}" data-id="${esc(s.site_id)}" role="button" tabindex="0"><span class="m" style="color:${c==='rgba(255,255,255,.62)'?'#8D93B8':c}">${esc(s.site_id)}${rk}</span><b>${esc(s.name)}</b><small>${esc(human(s.terrain_type))} · ${s.slope_deg==null?'slope n/a':esc(s.slope_deg.toFixed(1))+'°'}</small></div>`}).join('')
+   :`<div class="gl empty">${S.ready?'No sites match these filters. Widen the slope range or clear the search.':'No site data loaded.'}</div>`;
+  const a=B.querySelector('.s');if(a)a.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'})}
+function part(){$('#partner').innerHTML='<option value="">Choose partner site…</option>'+S.sites.filter(s=>s!==S.sel).map(s=>`<option value="${esc(s.site_id)}" ${s===S.partner?'selected':''}>${esc(s.site_id)} · ${esc(s.name)}</option>`).join('')}
+
+// --- target / failure-mode controls ---
+function targetChanged(){
+  const t=S.target;S.fm.clear();
+  const modes=t.required_failure_modes||[];
+  $('#fm').innerHTML=modes.length?modes.map(k=>`<button class="chip" data-k="${esc(k)}" aria-pressed="false">${esc(human(k))}</button>`).join(''):'<div class="nt">No failure modes defined for this target.</div>';
+  const F=t.features||{},have=Object.keys(F).filter(k=>num(F[k])!=null),miss=Object.keys(F).filter(k=>num(F[k])==null),mi=marsInfo(t);
+  $('#tinfo').innerHTML=`<b style="color:var(--tx)">${esc(t.name)}</b> · ${esc(t.planet)}<br>${esc(human(t.terrain_type))} · gravity ${fv(num(t.gravity_m_s2),2,' m/s²')}<br>
+   Target measurements populated: ${have.length?esc(have.join(', ')):'<b style="color:var(--or)">none</b>'}${miss.length?`<br>Not available: ${esc(miss.join(', '))}`:''}
+   ${mi?`<div style="color:var(--or);margin-top:4px">Numerical scoring not eligible: ${esc(mi.reason)}</div>`:''}
+   ${isAuditTarget(t)?'':'<div style="margin-top:4px">No audited failure-mode evidence exists for this target. Slope ranking and campaigns are computed for '+esc(D.rankings.target)+' only.</div>'}`;
+  sheet();if(!$('#pn').hidden)panel();
+}
+
+// --- site sheet ---
+function evidenceHTML(s){
+  const t=S.target;
+  if(!isAuditTarget(t)){const mi=marsInfo(t);
+    return `<div class="notice">No audited failure-mode evidence exists for <b>${esc(t.name)}</b>. The audit (/api/failure-evidence) covers ${esc(D.evidence.target)} only.${mi?' '+esc(mi.reason):''}</div><div class="grp">TARGET-REQUIRED MODES · NOT AUDITED</div>${ul((t.required_failure_modes||[]).map(human))}`}
+  const ev=s.evidence;if(!ev)return `<div class="notice">No evidence record for ${esc(s.site_id)} in the audit.</div>`;
+  let keys=Object.keys(ev);const tot=keys.length;if(S.fm.size)keys=keys.filter(k=>S.fm.has(k));
+  const groups=[['quantitative_proxy','QUANTITATIVE PROXIES'],['contextual_only','CONTEXTUAL EVIDENCE · NOT COUNTED AS QUANTITATIVE'],['unavailable','UNAVAILABLE · NO MEASUREMENT (NOT ZERO)']];
+  const known=new Set(groups.map(g=>g[0]));
+  const item=k=>{const e=ev[k]||{},u=e.unit?' '+e.unit:'';
+    const val=v=>typeof v==='number'?fv(v,4,u):v==null?NAH:esc(human(v));
+    return `<div class="ev ${(STATUS[e.status]||{}).c||''}">${stTag(e.status)}<b>${esc(human(k))}</b>
+      ${'earth_value' in e?`<div class="nt">Earth value: <span class="m">${val(e.earth_value)}</span>${'target_value' in e?` · target: <span class="m">${val(e.target_value)}</span>`:''}${'absolute_difference' in e?` · |Δ| <span class="m">${val(e.absolute_difference)}</span>`:''}</div>`:''}
+      ${e.caveat?`<div class="nt">Caveat: ${esc(e.caveat)}</div>`:''}${e.reason?`<div class="nt">${esc(e.reason)}</div>`:''}</div>`};
+  let h=S.fm.size?`<div class="nt">Focused on ${keys.length} of ${tot} audited modes (Controls → failure-mode focus).</div>`:'';
+  for(const[st,l]of groups){const ks=keys.filter(k=>(ev[k]||{}).status===st);if(ks.length)h+=`<div class="grp">${l}</div>`+ks.map(item).join('')}
+  const other=keys.filter(k=>!known.has((ev[k]||{}).status));if(other.length)h+='<div class="grp">OTHER STATUS</div>'+other.map(item).join('');
+  const nf=[...S.fm].filter(k=>!(k in ev));if(nf.length)h+=`<div class="nt">No audit entry for: ${esc(nf.map(human).join(', '))}.</div>`;
+  return h+`<div class="nt" style="margin-top:6px">Audit policy: ${esc((D.evidence.policy||[]).join(' '))}</div>`;
+}
+function profileHTML(s,pt){
+  const rows=FIELDS.map(([k,l,d,u])=>{const a=pct(k,s[k]),b=pt?pct(k,pt[k]):null;
+    return `<div class="pf"><span>${esc(l)}</span><div class="trk">${a!=null?`<i style="left:${a.toFixed(1)}%;background:#E7B85C" title="Primary percentile ${a.toFixed(0)}"></i>`:''}${b!=null?`<i style="left:${b.toFixed(1)}%;background:#52D6E8" title="Partner percentile ${b.toFixed(0)}"></i>`:''}</div><span class="v m">${fv(s[k],d,u)}</span></div>`}).join('');
+  return `<div class="sec"><h4>EXPLORATORY DATA PROFILE</h4><span class="tag w">NOT A SUITABILITY SCORE</span><div class="nt" style="margin:6px 0">Dot position = percentile of this site's raw value within the ${S.all.length}-site Earth dataset${pt?' (gold primary, cyan partner)':''}. It describes the data distribution only; neither end of a track is "better". Missing values are not plotted.</div>${rows}</div>`;
+}
+function physicsHTML(s){
+  const t=S.target,F=t.features||{},g=num(t.gravity_m_s2);
+  return `<div class="sec warn"><h5>⚠ PHYSICS DELTA · ${esc(String(t.name).toUpperCase())}</h5><table>
+  <tr><th></th><th>Earth site</th><th>Target</th></tr>
+  <tr><th>Gravity</th><td class="m">9.81 m/s² (1 g)</td><td class="m">${g==null?NAH:esc(g.toFixed(2)+' m/s² (≈'+(g/G0).toFixed(2)+' g)')}</td></tr>
+  <tr><th>Atmosphere</th><td>Dense, ~101 kPa</td><td>${esc(ENV[t.planet]||NA)}<sup>*</sup></td></tr>
+  <tr><th>Mean slope</th><td class="m">${fv(s.slope_deg,2,'°')} <span class="nt">~1 km</span></td><td class="m">${fv(num(F.slope_deg),2,'°')}${num(F.slope_deg)!=null&&isRankTarget(t)?' <span class="nt">5 m/px</span>':''}</td></tr>
+  <tr><th>Roughness</th><td class="m">${fv(s.roughness_rms_m,2,' m')} <span class="nt">plane-fit</span></td><td class="m">${fv(num(F.roughness_rms),2,' m')}${num(F.roughness_rms)!=null?' <span class="nt">3×3 std</span>':''}</td></tr>
+  <tr><th>Daily temp. range</th><td class="m">${fv(s.mean_daily_temp_range_k,1,' K')}</td><td class="m">${fv(num(F.diurnal_temp_swing_k),1,' K')}</td></tr>
+  <tr><th>Albedo</th><td class="m">${fv(s.albedo,2)}</td><td class="m">${fv(num(F.albedo),2)}</td></tr></table>
+  <div class="nt" style="margin-top:6px;color:#f3d6b8">Gravity and target values from /api/targets. Roughness methods differ (Earth plane-fit residual vs lunar local elevation std) and are not comparable. <sup>*</sup>Atmosphere is general background text, not a dataset value. An analog cannot reproduce gravity, vacuum or radiation; findings transfer only for the specific property tested.</div></div>`;
+}
+function lunarCmpHTML(s){
+  const t=S.target;
+  if(!isRankTarget(t)){const mi=marsInfo(t);return `<div class="sec"><h4>TARGET COMPARISON</h4><div class="notice">No terrain measurements are populated for <b>${esc(t.name)}</b>, so no Earth–target comparison is computed.${mi?' '+esc(mi.reason):''}</div></div>`}
+  const r=s.rank;
+  return `<div class="sec"><h4>SLOPE SIMILARITY · ${esc(String(D.rankings.target).toUpperCase())}</h4><div class="notice"><b>Slope similarity ranking — exploratory, not overall analog suitability.</b>${r?`<div class="tiles" style="margin:10px 0 6px"><div class="tl"><span>RANK</span><b class="m">#${esc(r.rank)} of ${esc(D.rankings.earth_sites_scored)}</b></div><div class="tl"><span>|Δ SLOPE|</span><b class="m">${fv(num(r.absolute_slope_difference_deg),2,'°')}</b></div><div class="tl"><span>EARTH SLOPE</span><b class="m">${fv(num(r.earth_slope_deg),2,'°')}</b></div><div class="tl"><span>LUNAR SLOPE</span><b class="m">${fv(num(r.target_slope_deg),2,'°')}</b></div></div>`:'<div class="nt">This site was not scored (see excluded sites).</div>'}<div class="nt">Method: ${esc(D.rankings.method&&D.rankings.method.formula)}. Earth slope uses a ~1 km stencil; lunar slope a 5 m/pixel LOLA raster — a major spatial-scale limitation. Status: ${esc(r?human(r.terrain_similarity_status):NA)}.</div></div></div>`;
+}
+function briefHTML(s){
+  const O=[],I=[],t=S.target,r=s.rank,lun=isRankTarget(t);
+  O.push(`Mean slope ${ft(s.slope_deg,2,'°')} from a ~1 km five-point elevation stencil.`+(lun&&r?` Absolute difference from the ${D.rankings.target} mean (${ft(num(r.target_slope_deg),2,'°')}, 5 m/pixel): ${ft(num(r.absolute_slope_difference_deg),2,'°')} — rank #${r.rank}, exploratory slope-only comparison.`:''));
+  O.push(`Roughness RMS ${ft(s.roughness_rms_m,2,' m')} (plane-fit residual; normalized ${ft(s.roughness_rms,3)}, dataset-dependent). Not comparable to the lunar 3×3 local elevation standard deviation, so no roughness similarity is claimed.`);
+  O.push(`Mean daily temperature range ${ft(s.mean_daily_temp_range_k,1,' K')}, precipitation ${ft(s.precip_mm_day,2,' mm/day')}, precipitation-only dryness proxy ${ft(s.precipitation_dryness_proxy,3)} (not the UNEP P/PET aridity index). No equivalent target measurements exist; NASA POWER fields have regional spatial limitations.`);
+  if(s.elevation_m!=null&&s.elevation_m>3000)I.push(`High elevation (${ft(s.elevation_m,0,' m')}) changes air density, crew physiology and logistics.`);
+  if(isAuditTarget(t)&&s.evidence){for(const[k,e]of Object.entries(s.evidence))if(e.status!=='quantitative_proxy')I.push(`${human(k)}: needs site-specific field measurements — current evidence is ${(STATUS[e.status]||{l:e.status}).l.toLowerCase()}.`)}
+  else I.push(`Failure modes for ${t.name} have not been audited; any test planning there needs field data not present in this dataset.`);
+  const fm=[...S.fm].map(human);I.unshift(`Objectives in focus: ${fm.length?fm.join(', '):'none selected'}. Focusing an objective does not establish that this site is suitable for it.`);
+  const lim=lun?(D.rankings.comparison_limitations||[]):[];
+  return `<span class="tag d">DATA</span><b>Observations</b>${ul(O)}
+  <span class="tag d">AUDITED</span><b>Failure-mode evidence</b>${evidenceHTML(s)}
+  <span class="tag w">LIMITATIONS</span><b>Comparison limitations</b>${lim.length?ul(lim):'<div class="nt">No Earth–target comparison computed for this target.</div>'}
+  <span class="tag g">INTERPRETATION</span><b>Uncertainties</b>${ul(['No seasonal operating-window data in the dataset.',s.quality.uncertainty_available?'Uncertainty values are available for some fields.':'No per-field uncertainty values are provided (quality.uncertainty_available = false).','Road-distance and protected-area estimates are not validated measurements and are not shown.'])}
+  <span class="tag g">INTERPRETATION</span><b>Recommended further testing</b>${ul(I)}`;
+}
+function detailsHTML(s,pt){
+  const row=(l,fn,mk)=>`<tr><th>${esc(l)}${mk&&s.meta[mk]?'<br>'+compTag(s.meta[mk].comparability_status):''}</th><td class="m">${fn(s)}</td>${pt?`<td class="m" style="color:var(--cy)">${fn(pt)}</td>`:''}</tr>`;
+  const rows=[row('Terrain type',x=>x.terrain_type==null?NAH:esc(human(x.terrain_type)),'terrain_type'),...FIELDS.map(([k,l,d,u,mk])=>row(l,x=>fv(x[k],d,u),mk))];
+  return `<div class="sec"><h4>DETAILS${pt?' · <span style="color:var(--au)">primary</span> / <span style="color:var(--cy)">partner</span>':''}</h4><div class="nt" style="margin-bottom:4px">Tags show each field's Earth–lunar comparability status from the contract metadata.</div><table>${rows.join('')}</table></div>`;
+}
+function qualityHTML(s){
+  const q=s.quality,p=s.provenance,M=s.meta;
+  const md=Object.entries(M).map(([k,m])=>`<div class="md"><b>${esc(k)}</b> ${compTag(m.comparability_status)}<div class="nt">Unit: ${esc(m.unit??NA)} · Sampling scale: ${m.sampling_scale_m==null?NA:esc(m.sampling_scale_m+' m')} · Resolution: ${m.spatial_resolution_m==null?NA:esc(m.spatial_resolution_m+' m')} · Uncertainty: ${m.uncertainty==null?NA:esc(m.uncertainty)}</div><div class="nt">Source: ${esc(m.source??NA)}</div><div class="nt">Method: ${esc(m.method??NA)}</div></div>`).join('');
+  return `<div class="sec"><h4>DATA QUALITY &amp; PROVENANCE</h4><div class="nt">Dataset version <span class="m">${esc(p.dataset_version??NA)}</span> · missing features: ${q.missing_features&&q.missing_features.length?esc(q.missing_features.join(', ')):'none listed'} · uncertainty available: ${q.uncertainty_available?'yes':'no'}</div>
+  <details open><summary>Quality notes (${(q.quality_notes||[]).length})</summary>${ul(q.quality_notes)}</details>
+  <details><summary>Feature metadata — method, source, scale</summary>${md||'<div class="nt">None provided.</div>'}<div class="nt">Elevation has no per-field metadata in the contract.</div></details>
+  <details><summary>Source references</summary><ul>${(p.source_references||[]).map(u=>`<li>${link(u)}</li>`).join('')||'<li>None listed.</li>'}</ul></details></div>`;
+}
+function sheet(){const s=S.sel,E=$('#sh');if(!s||!S.ready){E.innerHTML='';return}
+  const pt=S.comp&&S.partner?S.partner:null;
+  const pair=S.pairFrom!=null&&pt?`<div class="notice">Pair loaded from <b>generated campaign #${esc(S.pairFrom)}</b> (/api/campaigns). Different terrain categories do not prove different failure-mode coverage; complementarity is not established and no validated risk-coverage percentage exists.</div>`:'';
+  E.innerHTML=`<button class="x" data-act="close" aria-label="Close">×</button><div class="m" style="color:var(--au)">${esc(s.site_id)}</div><h2>${esc(s.name)}</h2><div class="nt">${esc(human(s.terrain_type))} · <span class="m">${fv(s.lat,3,'°')}, ${fv(s.lon,3,'°')}</span></div>${pt?`<div class="nt" style="color:var(--cy)">Partner: ${esc(pt.site_id)} · ${esc(pt.name)}</div>`:''}${pair}
+  <div class="tiles"><div class="tl"><span>ELEVATION</span><b class="m">${fv(s.elevation_m,0,' m')}</b></div><div class="tl"><span>MEAN SLOPE · ~1 KM</span><b class="m">${fv(s.slope_deg,2,'°')}</b></div><div class="tl"><span>MEAN DAILY T RANGE</span><b class="m">${fv(s.mean_daily_temp_range_k,1,' K')}</b></div><div class="tl"><span>PRECIPITATION</span><b class="m">${fv(s.precip_mm_day,2,' mm/d')}</b></div></div><div class="nt">Seasonal operating window: not in dataset.</div>
+  ${lunarCmpHTML(s)}${profileHTML(s,pt)}${physicsHTML(s)}${detailsHTML(s,pt)}
+  <div class="sec"><h4>READINESS BRIEF</h4>${briefHTML(s)}<div class="nt">Fixed rules over API fields; not a language model and not a suitability assessment.</div></div>
+  ${qualityHTML(s)}
+   <div class="sec"><h4>FIELD ANALOG CONTEXT</h4><div class="ph" style="border-style:solid;color:var(--tx)"><strong>${esc(human(s.terrain_type)||"Terrestrial Analog")}</strong> · ${s.elevation_m!=null?fv(s.elevation_m,0," m elev"):"Elevation n/a"}<br><span style="color:var(--mu)">${String(s.site_id||"").startsWith("BM-")?"Calibrated Benchmark Site":"Candidate Analog Site"} · Hardware subsystem telemetry is not in the dataset; evaluated strictly on physical terrain &amp; climate measurements.</span></div></div>
+  <div class="sec"><h4>IMAGERY</h4>${imgHTML(s)}</div>`}
+function imgHTML(s){
+  if(s.lat==null||s.lon==null)return '<div class="ph">No coordinates available.</div>';
+  const cid='sat_'+String(s.site_id||'x').replace(/[^a-zA-Z0-9]/g,'_');
+  const wv=`https://worldview.earthdata.nasa.gov/?v=${(s.lon-.35).toFixed(4)},${(s.lat-.25).toFixed(4)},${(s.lon+.35).toFixed(4)},${(s.lat+.25).toFixed(4)}`;
+  setTimeout(()=>drawSat(cid,s.lat,s.lon),0);
+  return `<div style="position:relative;width:100%;height:168px;border-radius:10px;overflow:hidden;border:1px solid var(--ln);background:#070b14"><canvas id="${cid}" width="340" height="168" style="position:static!important;inset:auto!important;top:auto!important;left:auto!important;display:block;width:100%;height:168px"></canvas><div class="m" style="position:absolute;left:8px;bottom:8px;background:rgba(7,11,20,.82);padding:3px 7px;border-radius:6px;font-size:10px;color:var(--tx);border:1px solid var(--ln)">${fv(s.lat,4)}, ${fv(s.lon,4)} · z12</div><a href="${wv}" target="_blank" rel="noopener" style="position:absolute;right:8px;bottom:8px;background:rgba(7,11,20,.82);padding:3px 7px;border-radius:6px;font-size:10px;color:var(--ac);text-decoration:none;border:1px solid var(--ln)">NASA Worldview ↗</a></div><div class="nt">Contextual Earth satellite preview (Esri World Imagery, ~38 m/px). Visual context only — not used in terrain/climate calculations; no Lunar or Martian orbital imagery is bundled.</div>`;
+}
+function drawSat(cid,lat,lon){
+  const c=document.getElementById(cid);if(!c)return;
+  const ctx=c.getContext('2d'),W=c.width,H=c.height;
+  const z=12,n=1<<z,r=lat*Math.PI/180,fx=(lon+180)/360*n;
+  const fy=(1-Math.log(Math.tan(r)+1/Math.cos(r))/Math.PI)/2*n;
+  const cx=Math.floor(fx),cy=Math.floor(fy),ox=(fx-cx)*256,oy=(fy-cy)*256;
+  let loaded=0,failed=0;
+  const ring=()=>{ctx.save();ctx.strokeStyle='#ffd166';ctx.lineWidth=1.75;ctx.beginPath();ctx.arc(W/2,H/2,8,0,Math.PI*2);ctx.stroke();ctx.restore();};
+  ring();
+  for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){
+    const tx=((cx+dx)%n+n)%n,ty=Math.max(0,Math.min(n-1,cy+dy));
+    const im=new Image();im.crossOrigin='anonymous';
+    im.onload=()=>{loaded++;ctx.drawImage(im,W/2+dx*256-ox,H/2+dy*256-oy,256,256);ring();};
+    im.onerror=()=>{failed++;if(loaded===0&&failed===9){ctx.fillStyle='#070b14';ctx.fillRect(0,0,W,H);ctx.fillStyle='#94a3b8';ctx.font='12px system-ui,sans-serif';ctx.fillText('Offline or tile unavailable.',14,32);}};
+    im.src=`https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${z}/${ty}/${tx}`;
+  }
+}
+
+// --- reference data panel ---
+const TABS=[['lunar','Lunar reference'],['rank','Slope ranking'],['camp','Campaigns'],['ev','Evidence audit']];
+function panel(){const P=$('#pn');if(!S.ready){P.innerHTML='';return}
+  P.innerHTML=`<button class="x" data-act="pclose" aria-label="Close">×</button><div class="tabs" role="tablist">${TABS.map(([k,l])=>`<button class="chip ${S.tab===k?'on':''}" role="tab" aria-selected="${S.tab===k}" data-act="tab" data-tab="${k}">${l}</button>`).join('')}</div>`+({lunar:lunarTab,rank:rankTab,camp:campTab,ev:evTab}[S.tab])()}
+function lunarTab(){const L=D.lunar,F=L.features,pv=L.provenance||{},qc=L.quality_checks||{};
+  const seen=new Map(),rows=[];
+  for(const[k,v]of Object.entries(F)){if(!v||typeof v!=='object')continue;const sig=JSON.stringify(v);if(seen.has(sig)){seen.get(sig).alias.push(k);continue}const r={k,v,alias:[]};seen.set(sig,r);rows.push(r)}
+  const d=v=>fv(num(v),3);
+  return `<h2>${esc(L.target)}</h2><div class="nt">${esc(L.site)} · target_id <span class="m">${esc(L.target_id)}</span> · resolution <span class="m">${fv(num(L.resolution_m),0,' m/pixel')}</span> · elevation coverage <span class="m">${fv(num(F.elevation_coverage_percent),1,'%')}</span></div>
+  <div class="sec scroll"><table><tr><th>Field</th><th>Unit</th><th>Mean</th><th>Median</th><th>Std</th><th>Min</th><th>Max</th><th>Valid px</th></tr>${rows.map(({k,v,alias})=>`<tr><th>${esc(k)}${alias.length?`<div class="nt">same values as ${esc(alias.join(', '))}</div>`:''}${v.method?`<div class="nt">${esc(v.method)}${v.window_pixels?`, ${esc(v.window_pixels)}×${esc(v.window_pixels)} px window`:''}</div>`:''}</th><td>${esc(v.unit??NA)}</td><td class="m">${d(v.mean)}</td><td class="m">${d(v.median)}</td><td class="m">${d(v.std)}</td><td class="m">${d(v.min)}</td><td class="m">${d(v.max)}</td><td class="m">${num(v.valid_pixels)==null?NAH:esc(v.valid_pixels.toLocaleString())}</td></tr>`).join('')}</table></div>
+  <div class="sec warn"><h5>⚠ RESOLUTION &amp; METHOD CAVEATS</h5><ul><li>Lunar values are ${esc(L.resolution_m)} m/pixel LOLA raster statistics; Earth slope uses a ~1 km elevation stencil. Slope comparison is approximate with a major spatial-scale limitation.</li><li>Lunar roughness is local elevation standard deviation (${esc(F.roughness_rms&&F.roughness_rms.window_pixels)}×${esc(F.roughness_rms&&F.roughness_rms.window_pixels)} window, ≥${esc(F.roughness_rms&&F.roughness_rms.minimum_valid_neighbors)} valid neighbours). Earth roughness is a plane-fit residual. They are not directly comparable.</li><li>No lunar albedo, temperature or dryness values are provided, so climate fields cannot be compared.</li></ul></div>
+  <div class="sec"><h4>PROVENANCE</h4><table><tr><th>Source</th><td>${esc(pv.source_name??NA)}</td></tr><tr><th>Dataset</th><td>${esc(pv.instrument_or_dataset??NA)}</td></tr><tr><th>Measurement date</th><td>${pv.measurement_date==null?NAH:esc(pv.measurement_date)}</td></tr><tr><th>Value type</th><td>${esc(human(pv.value_type))}</td></tr><tr><th>URL</th><td>${pv.source_url?link(pv.source_url):NAH}</td></tr></table><div class="nt" style="margin-top:6px">${esc(pv.notes??'')}</div></div>
+  <div class="sec"><h4>QUALITY CHECKS</h4><table>${Object.entries(qc).filter(([,v])=>typeof v!=='object').map(([k,v])=>`<tr><th>${esc(human(k))}</th><td class="m">${esc(typeof v==='number'?v.toLocaleString():v)}</td></tr>`).join('')}</table></div>`}
+function rankTab(){const R=D.rankings,t=S.target,cur=S.sel&&S.sel.site_id;
+  return `<h2>Slope similarity ranking</h2><div class="notice"><b>Slope similarity ranking — exploratory, not overall analog suitability.</b> Earth sites ranked by ${esc(R.method&&R.method.name)} against ${esc(R.target)} (${esc(R.method&&R.method.formula)}; lower is closer). No other feature contributes.</div>
+  ${isRankTarget(t)?'':`<div class="notice" style="border-color:#f2a65a66">Selected target <b>${esc(t.name)}</b> has no ranking: ${esc((marsInfo(t)||{}).reason||'no terrain measurements populated.')} The table below is for ${esc(R.target)} only.</div>`}
+  <div class="nt">Sites received ${esc(R.earth_sites_received)} · scored ${esc(R.earth_sites_scored)} · excluded ${esc(R.earth_sites_excluded)}${(R.excluded_sites||[]).length?': '+esc(R.excluded_sites.map(x=>x.site_id||JSON.stringify(x)).join(', ')):''}</div>
+  <div class="warn sec"><h5>⚠ COMPARISON LIMITATIONS</h5>${ul(R.comparison_limitations)}</div>
+  <div class="sec scroll"><table><tr><th>Rank</th><th>Site</th><th>Earth slope</th><th>Lunar slope</th><th>|Δ slope|</th></tr>${R.rankings.map(r=>`<tr class="clk ${r.site_id===cur?'cur':''}" data-act="site" data-id="${esc(r.site_id)}"><td class="m">${esc(r.rank)}</td><td><span class="m" style="color:var(--mu)">${esc(r.site_id)}</span> ${esc(r.site_name)}</td><td class="m">${fv(num(r.earth_slope_deg),2,'°')}</td><td class="m">${fv(num(r.target_slope_deg),2,'°')}</td><td class="m">${fv(num(r.absolute_slope_difference_deg),2,'°')}</td></tr>`).join('')}</table></div><div class="nt">Click a row to inspect the site.</div>`}
+function campTab(){const C=D.campaigns;
+  const st=x=>`<div><span class="m" style="color:var(--mu)">${esc(x.site_id)}</span> <b>${esc(x.site_name)}</b><div class="nt">${esc(human(x.terrain_type))}</div><div class="nt">Slope ${fv(num(x.slope_deg),2,'°')} · |Δ| ${fv(num(x.slope_difference_deg),2,'°')}${x.region!=null?' · '+esc(x.region):''}</div></div>`;
+  return `<h2>Generated two-site campaign shortlist</h2><div class="notice">Generated by the backend (/api/campaigns) for <b>${esc(C.target)}</b>. This is separate from your manual two-site comparison in Controls. <b>Different terrain categories do not prove different failure-mode coverage. Failure-mode complementarity is not established. A validated risk-coverage percentage is unavailable.</b></div>
+  <div class="nt">${esc(C.candidate_sites)} candidate sites · ${esc(C.different_terrain_pairs_evaluated)} different-terrain pairs evaluated · ${C.campaign_candidates.length} shown</div>
+  <div class="sec"><h4>SELECTION METHOD</h4>${ul(C.selection_method)}<h4>INTERPRETATION</h4>${ul(C.interpretation)}</div>
+  <div class="sec">${C.campaign_candidates.map(c=>`<div class="camp"><div class="m" style="color:var(--au)">CAMPAIGN #${esc(c.rank)}</div><div class="pr">${(c.sites||[]).map(st).join('')}</div>
+   <div class="nt">Mean |Δ slope| <span class="m">${fv(num(c.mean_slope_difference_deg),2,'°')}</span> · worst site <span class="m">${fv(num(c.worst_site_slope_difference_deg),2,'°')}</span> · terrain categories differ: ${c.terrain_categories_differ?'yes':'no'}</div>
+   <div class="nt">Failure-mode complementarity: <b style="color:var(--or)">${esc(c.failure_mode_complementarity==='not_established'?'Not established':human(c.failure_mode_complementarity))}</b> · Validated risk coverage: ${num(c.validated_risk_coverage_percent)==null?'<b style="color:var(--or)">Not available</b>':esc(c.validated_risk_coverage_percent+'%')}</div>
+   <div style="margin-top:8px"><button class="btn" data-act="pair" data-rank="${esc(c.rank)}">Open pair in comparison view</button></div></div>`).join('')}</div>`}
+function evTab(){const E=D.evidence,cnt={};
+  for(const s of E.sites)for(const[k,e]of Object.entries(s.failure_mode_evidence||{})){cnt[k]=cnt[k]||{};cnt[k][e.status]=(cnt[k][e.status]||0)+1}
+  const stats=Object.keys(STATUS);
+  return `<h2>Failure-mode evidence audit</h2><div class="nt">Audit v${esc(E.audit_version)} · target ${esc(E.target)} · ${esc(E.earth_sites_evaluated)} Earth sites evaluated · coverage percentage calculated: <b>${E.coverage_percent_calculated?'yes':'no'}</b></div>
+  <div class="notice">${ul(E.policy)}</div>
+  <div class="sec scroll"><h4>EVIDENCE STATUS BY MODE (SITE COUNTS)</h4><table><tr><th>Failure mode</th>${stats.map(k=>`<th>${stTag(k)}</th>`).join('')}</tr>${Object.entries(cnt).map(([k,c])=>`<tr><th>${esc(human(k))}</th>${stats.map(x=>`<td class="m">${esc(c[x]||0)}</td>`).join('')}</tr>`).join('')}</table>
+  <div class="nt" style="margin-top:6px">Evidence item totals: ${Object.entries(E.evidence_item_totals||{}).map(([k,v])=>`${esc((STATUS[k]||{l:k}).l)} ${esc(v)}`).join(' · ')}. These are counts of evidence items, not a coverage measure; contextual items are not quantitative coverage.</div></div>
+  <div class="sec"><h4>MARS TARGETS</h4>${(E.mars_targets||[]).map(m=>`<div class="ev u"><b>${esc(m.target_name)}</b> <span class="m nt">${esc(m.target_id)}</span><div class="nt">Numerical scoring eligible: ${m.numerical_scoring_eligible?'yes':'no'} — ${esc(m.reason)}</div></div>`).join('')||'<div class="nt">None listed.</div>'}</div>`}
+function openPanel(tab){if(tab)S.tab=tab;if(innerWidth<900){$('#fl').classList.add('h');S.sel=null}$('#pn').hidden=false;panel();$('#pn').scrollTop=0;ui()}
+
+// --- filtering ---
+function ensureVisible(...ss){if(ss.every(s=>S.sites.includes(s)))return;S.q='';$('#q').value='';S.smin=S.slopeLo;S.smax=S.slopeHi;$('#smin').value=S.smin;$('#smax').value=S.smax;apply()}
+function apply(){
+  if(!S.ready){$('#cnt').textContent='LOADING…';bar();return}
+  const full=S.smin<=S.slopeLo&&S.smax>=S.slopeHi,q=S.q;
+  $('#rv').textContent=full?'any':`${S.smin}° – ${S.smax}°`;
+  let a=S.all.filter(s=>(full||(s.slope_deg!=null&&s.slope_deg>=S.smin&&s.slope_deg<=S.smax))&&(!q||[s.name,s.site_id,s.terrain_type,human(s.terrain_type)].join(' ').toLowerCase().includes(q)));
+  if(S.sort==='rank')a=a.slice().sort((x,y)=>(x.rank?x.rank.rank:Infinity)-(y.rank?y.rank.rank:Infinity));
+  S.sites=a;
+  if(S.sel&&!a.includes(S.sel)){S.sel=null;S.partner=null;S.pairFrom=null}
+  if(S.partner&&!a.includes(S.partner)){S.partner=null;S.pairFrom=null}
+  $('#cnt').innerHTML=`${a.length}<span class="lng"> </span>/<span class="lng"> </span>${S.all.length}<span class="lng"> SITES</span>`;ui();
+}
+function bindControls(){
+  $('#fm').onclick=e=>{const b=e.target.closest('[data-k]');if(!b)return;const k=b.dataset.k;S.fm.has(k)?S.fm.delete(k):S.fm.add(k);b.classList.toggle('on',S.fm.has(k));b.setAttribute('aria-pressed',S.fm.has(k));sheet()};
+  $('#comp').onchange=e=>{S.comp=e.target.checked;$('#cb').hidden=!S.comp;if(!S.comp)S.pairFrom=null;sheet();bar()};
+  $('#partner').onchange=e=>{S.partner=S.byId.get(e.target.value)||null;S.pairFrom=null;sheet();bar()};
+  const sl=w=>e=>{let v=+e.target.value;if(w==='min'){S.smin=v;if(v>S.smax){S.smax=v;$('#smax').value=v}}else{S.smax=v;if(v<S.smin){S.smin=v;$('#smin').value=v}}apply()};
+  $('#smin').oninput=sl('min');$('#smax').oninput=sl('max');
+  $('#sort').onchange=e=>{S.sort=e.target.value;apply()};
+  $('#q').oninput=e=>{S.q=e.target.value.toLowerCase().trim();apply()};
+  $('#planet').onchange=e=>{const t=(D.targets.targets||[]).find(x=>x.target_id===e.target.value);if(t){S.target=t;targetChanged()}};
+  $('#ftog').onclick=()=>{const open=$('#fl').classList.toggle('h')===false;if(open&&innerWidth<900){S.sel=null;$('#pn').hidden=true}ui()};if(innerWidth<900)$('#fl').classList.add('h');
+  $('#ptog').onclick=()=>{const P=$('#pn');if(P.hidden)openPanel();else{P.hidden=true;ui()}};
+  $('#bar').onclick=e=>{const c=e.target.closest('.cd');if(c)select(S.byId.get(c.dataset.id))};
+  $('#bar').onkeydown=e=>{const c=e.target.closest('.cd');if(c&&(e.key==='Enter'||e.key===' ')){e.preventDefault();select(S.byId.get(c.dataset.id))}};
+  document.addEventListener('click',e=>{const b=e.target.closest('[data-act]');if(!b)return;const a=b.dataset.act;
+    if(a==='retry')loadAll();
+    else if(a==='close'){S.sel=null;S.partner=null;S.pairFrom=null;ui()}
+    else if(a==='pclose'){$('#pn').hidden=true;ui()}
+    else if(a==='tab'){S.tab=b.dataset.tab;panel()}
+    else if(a==='site'){const s=S.byId.get(b.dataset.id);if(s){ensureVisible(s);$('#pn').hidden=true;select(s)}}
+    else if(a==='pair'){const c=D.campaigns.campaign_candidates.find(x=>String(x.rank)===b.dataset.rank);if(!c)return;const[p,q]=(c.sites||[]).map(x=>S.byId.get(x.site_id));if(!p||!q)return;
+      ensureVisible(p,q);S.comp=true;$('#comp').checked=true;$('#cb').hidden=false;$('#pn').hidden=true;select(p);S.partner=q;S.pairFrom=c.rank;ui()}});
+  addEventListener('keydown',e=>{if(e.key==='Escape'&&!$('#pn').hidden){$('#pn').hidden=true;ui()}});
+}
+$('#enter').onclick=()=>{if(!S.ready)return;G.hero=false;$('#hero').classList.add('out');$('#ui').classList.add('on');G.z=1;setTimeout(()=>$('#hero').style.display='none',900)};
+addEventListener('resize',size);size();bindControls();apply();frame();loadAll();
+</script></body></html>
