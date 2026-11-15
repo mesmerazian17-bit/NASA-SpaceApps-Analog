@@ -14,3 +14,7 @@ data/raw/lunar/*.tif
 
 # Local JSON backups
 data/planetary_targets.backup_*.json
+
+node_modules/
+**/node_modules/
+PlanetryAnalog.zip
